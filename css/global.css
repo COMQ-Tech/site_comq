@@ -1,0 +1,34 @@
+/* 
+Primária (Destaque): #28535a (tons sóbrios para headers, footer e elementos estruturais).
+Secundária (Ações): #c00d7b (botões, links e destaques).
+Terciária (Energia): #fa7e34 (hover, ícones, elementos interativos).
+Acessória (Brilho): #ffc645 (fundos claros, destaques positivos, textos sobre fundos escuros).
+*/
+:root {
+  --color-primary: #28535a;
+  --color-secondary: #c00d7b;
+  --color-tertiary: #fa7e34;
+  --color-accent: #ffc645;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-primary: "Roboto", sans-serif;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  max-width: 1536px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
