@@ -1,0 +1,48 @@
+.relatos_de_impacto {
+    padding: 3vh 5vw;
+}
+
+.relatos_de_impacto_container {
+    text-align: center;
+}
+
+.relatos_de_impacto_container h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.relatos_de_impacto_container p {
+    padding-bottom: 30px;
+}
+
+.relatos_de_impacto_cards {
+    display: flex;
+}
+
+.relatos_de_impacto_card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.relatos_de_impacto_card div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.relatos_de_impacto_card div img {
+    flex: 1;
+}
+
+.relatos_de_impacto_card div div {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex: 4;
+}
+
+.relatos_de_impacto_card div div p {
+    margin: 0;
+    padding: 0;
+}
