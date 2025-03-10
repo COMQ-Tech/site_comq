@@ -94,7 +94,7 @@
 
 .timeline ul li .cardContent h4 {
     padding: 8px 16px;
-    background-color: var(--color-tertiary);
+    background-color: rgba(250, 126, 52,0.24);
     color: var(--color-primary);
     font-family: "Barlow", sans-serif;
     font-weight: 500;
