@@ -1,0 +1,119 @@
+.history {
+    padding: 16px 0;
+    background-color: #f9fafb;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #ffc74583;
+    transform: translateX(-50%);
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.timeline ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    list-style-type: none;
+}
+
+.cardContent {
+    width: 48%;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: end;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardContent:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.cardImg {
+    height: 12rem;
+    width: calc(100% + 3rem); 
+    margin: -1.5rem -1.5rem 0 -1.5rem; 
+    border-radius: 0.5rem 0.5rem 0 0;
+    object-fit: cover; 
+}
+
+.point {
+    min-width: 16px;
+    min-height: 16px;
+    background-color: #fa7e34;
+    border-radius: 100%;
+    border: 4px #fff solid;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.timeline ul li:nth-child(odd) .cardContent {
+    align-items: flex-end; 
+    text-align: right;
+}
+
+.timeline ul li:nth-child(even) .cardContent {
+    margin-left: auto; 
+    align-items: flex-start;
+    text-align: left; 
+}
+
+.timeline ul li .cardContent h3 {
+    padding: 8px 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    color: var(--color-primary);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.timeline ul li .cardContent h4 {
+    padding: 8px 16px;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 1rem;
+}
+
+.timeline ul li .cardContent p {
+    padding: 8px 16px;
+    font-family: Nunito, sans-serif;
+    size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
