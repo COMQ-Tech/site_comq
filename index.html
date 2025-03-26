@@ -1,48 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- JS -->
-    <script src="js/app.js/" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <h1>Comq!</h1>
+  <!-- import Barlow Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- import Nunito Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JS -->
+  <script src="js/app.js/" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1>Comq!</h1>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__container">
+      <h1>Transformando vidas através de oportunidades</h1>
+      <p>
+        O Centro de Oportunidades do Mário Quintana (COMQ) é uma iniciativa
+        que conecta jovens e empreendedores do bairro a oportunidades de
+        emprego, capacitação e desenvolvimento. Acreditamos no potencial
+        transformador da comunidade quando recebe as ferramentas certas.
+      </p>
+      <div class="hero__buttons">
+        <a href="#" class="hero__buttons-accent">Conheça nossos projetos</a>
+        <a href="#" class="hero__buttons-white">Seja um parceiro</a>
       </div>
-    </header>
+    </div>
 
-    <section class="hero">
-      <div class="container hero__container">
-        <h1>Transformando vidas através de oportunidades</h1>
-        <p>
-          O Centro de Oportunidades do Mário Quintana (COMQ) é uma iniciativa
-          que conecta jovens e empreendedores do bairro a oportunidades de
-          emprego, capacitação e desenvolvimento. Acreditamos no potencial
-          transformador da comunidade quando recebe as ferramentas certas.
-        </p>
-        <div class="hero__buttons">
-          <a href="#" class="hero__buttons-accent">Conheça nossos projetos</a>
-          <a href="#" class="hero__buttons-white">Seja um parceiro</a>
-        </div>
-      </div>
+    <div class="hero__bg">
+      <img src="./images/hero-bg.webp" alt="Imagem de fundo" aria-hidden="true" width="1920" height="564"
+        decoding="async" />
+    </div>
+  </section>
 
-      <div class="hero__bg">
-        <img
-          src="./images/hero-bg.webp"
-          alt="Imagem de fundo"
-          aria-hidden="true"
-          width="1920"
-          height="564"
-          decoding="async"
-        />
-      </div>
-    </section>
-  </body>
+  <section class="history">
+    <div class="timeline">
+      <ul>
+        <li>
+          <div class="cardContent">
+            <img class="cardImg" src="./images/ourHistory1.webp" 
+            alt="Imagem de fundo" aria-hidden="true" height="12rem" width="100%" decoding="async" />
+            <h4>Março 2020</h4>
+            <h3>Fundação do COMQ</h3>
+            <p>Lançamento oficial do Centro de Oportunidades do Mário Quintana com o objetivo de conectar jovens a oportunidades de emprego.</p>
+
+          </div>
+          <div class="point"></div>
+        </li>
+
+        <li>
+          <div class="cardContent">
+            <img class="cardImg" src="./images/ourHistory2.webp" 
+            alt="Imagem de fundo" aria-hidden="true" height="12rem" width="100%" decoding="async" />
+            
+            <h4>Julho 2020</h4>
+            <h3>Parceria com SENAC</h3>
+            <p>Estabelecimento de parceria estratégica com o SENAC para oferecer cursos profissionalizantes gratuitos para jovens do bairro.</p>
+
+          </div>
+          <div class="point"></div>
+        </li>
+
+        <li>
+          <div class="cardContent">
+            <img class="cardImg" src="./images/ourHistory3.webp" 
+            alt="Imagem de fundo" aria-hidden="true" height="12rem" width="100%" decoding="async" />
+            <h4>Novembro 2021</h4>
+            <h3>Evento Online para Empreendedoras</h3>
+            <p>Realização do primeiro evento online dedicado a empreendedoras do bairro, com workshops e mentorias.</p>
+
+          </div>
+          <div class="point"></div>
+        </li>
+
+        <li>
+          <div class="cardContent">
+            <img class="cardImg" src="./images/ourHistory4.webp" 
+            alt="Imagem de fundo" aria-hidden="true" height="12rem" width="100%" decoding="async" />
+            <h4>Maio 2022</h4>
+            <h3>Participação na Expofavela</h3>
+            <p>COMQ marca presença na Expofavela, apresentando projetos e conectando empreendedores locais a novas oportunidades de mercado.</p>
+
+          </div>
+          <div class="point"></div>
+        </li>
+
+        <li>
+          <div class="cardContent">
+            <img class="cardImg" src="./images/ourHistory5.webp" 
+            alt="Imagem de fundo" aria-hidden="true" height="12rem" width="100%" decoding="async" />
+            <h4>Maio 2022</h4>
+            <h3>Participação na Expofavela</h3>
+            <p>COMQ marca presença na Expofavela, apresentando projetos e conectando empreendedores locais a novas oportunidades de mercado.</p>
+
+          </div>
+          <div class="point"></div>
+        </li>
+
+        <li>
+          <div class="cardContent">
+            <img class="cardImg" src="./images/ourHistory1.webp" 
+            alt="Imagem de fundo" aria-hidden="true" height="12rem" width="100%" decoding="async" />
+            <h4>Janeiro 2023</h4>
+            <h3>Lançamento do Programa de Mentoria</h3>
+            <p>Início do programa de mentoria que conecta profissionais experientes a jovens em início de carreira.</p>
+
+          </div>
+          <div class="point"></div>
+        </li>
+
+        <ul>
+    </div>
+  </section>
+</body>
+
 </html>
