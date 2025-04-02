@@ -1,4 +1,155 @@
+/* ========== ESTILOS GERAIS ========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========== CABEÇALHO ========== */
+
 .header {
-  background-color: lightcoral;
+  background-color: transparent;
+  color: #ff009db9;
+  width: 100%;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.scrolled {
+  background-color: #ae00ff;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* ========== TÍTULO ========== */
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+/* ========== MENU DE NAVEGAÇÃO ========== */
+
+.navh {
+  display: flex;
+  list-style: none;
+}
+
+.navh li {
+  margin: 0 10px;
+}
+
+.navh a {
+  color: #28535a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navh a:hover {
+  color: #c00d7b;
+}
+
+/* ========== BOTÃO ========== */
+
+.BTN1 {
+  background-color: #c00d7b;
   color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+
+.BTN1:hover {
+  background-color: #28535a;
+}
+
+/* ========== MENU RESPONSIVO ========== */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #28535a;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* ========== RESPONSIVIDADE (TELAS MENORES) ========== */
+
+@media (max-width: 768px) {
+ 
+  .header__container {
+    flex-direction: row;
+  }
+
+  /* Configuração do menu hambúrguer */
+  .navh {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  /* Quando o menu é ativado */
+  .navh.active {
+    right: 0;
+  }
+
+  .navh li {
+    margin: 20px 0;
+  }
+
+  .navh a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .navh a:hover {
+    color: #c00d7b;
+  }
+
+  /* Exibir botão hamburguer */
+  .menu-toggle {
+    display: block;
+  }
+
+ 
+  .menu-toggle.active::before {
+    content: "✖";
+    font-size: 32px;
+  }
+}
+
+.BTN1{
+ transform: translateX(-2em);
 }
