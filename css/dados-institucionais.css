@@ -1,0 +1,315 @@
+/* Component */
+.titulos {
+    color: rgba(40, 83, 90, 1);
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+}
+/* Fim Components */
+
+/* Container */
+.container {
+    padding: 3vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(249, 250, 251, 1);
+}
+/* Fim Container */
+
+/* Dados institucionais */
+.sub-introductions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-introductions .principal-title{
+    font-size: 36px;
+    margin-top: 80px;
+}
+.sub-introductions .descriptions-data {
+    font-family: "Nunito", sans-serif;
+    max-width: 672px;
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 64px;
+    font-size: 18px;
+    line-height: 28px;
+}
+/* Container institucional */
+.container_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.container_card-infos {
+    width: 100%; 
+    max-width: 480px; 
+    min-height: 336px; 
+    padding: 0 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+}
+.container_card-infos .image{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.container_card-infos .secundario-title {
+    font-size: 20px;
+}
+.container_card-infos .descriptions-cards{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 13px;
+    width: 100%;
+    min-height: 94px;
+}
+.container_card-infos .lista li {
+    list-style: disc;
+}
+/* Para dispositivos de 768px ou menos */
+@media (max-width: 768px) {
+    .sub-introductions .descriptions-data{
+        font-size: 20px;  
+        line-height: 24px; 
+        margin-top: 16px; 
+        margin-bottom: 64px; 
+        max-width: 90%; 
+    }
+    .container_card {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container_card-infos {
+        width: 100%;
+        max-width: 100%; 
+        margin-bottom: 32px;
+    }
+}
+/* Para dispositivos entre 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container_card {
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+    }
+
+    .container_card-infos {
+        width: 45%;
+        max-width: 480px;
+    }
+}
+/* Fim dados institucionais*/
+
+/* Parceiros */
+.container_parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 24px 0;
+    min-height: auto;
+    margin-top: 32px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+.parceiros-titulos {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin: 32px 0 24px 0;
+}
+.container_parceiros-cards {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card-parceiros{
+    border-radius: 8px;
+    background-color: rgba(249, 250, 251, 1);
+    padding: 16px 104px;
+    margin-bottom: 32px;
+}
+.card-parceiros img {
+    width: 96px;
+    cursor: pointer;
+}
+/* Para dispositivos de 768px ou menos */
+@media (max-width: 768px) {
+    .container_parceiros-cards {
+        display: block;
+        width: 100%; 
+        margin: 0 auto;
+    }
+}
+/* Para dispositivos entre 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1348px) {
+    .container_parceiros{
+        width: 100%;
+        max-width: 100%; 
+    }
+    .container_parceiros-cards  {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        justify-content: center; 
+    }
+}
+/* Fim Parceiros */
+
+/* Início Seja Parceiro */
+.partnership {
+    max-width: 1504px;
+    min-height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 2rem;
+    font-family: Nunito, sans-serif;
+    color: #fff;
+}
+
+.partnership__info {
+    flex: 1;
+    max-width: 750px;
+    min-height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(90deg, #28535A 0%, #C00D7B 100%);
+    overflow: hidden;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: stretch;
+}
+
+.partnership__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.partnership__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.partnership__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.partnership__benefits {
+    margin-bottom: 36px;
+}
+
+.partnership__benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.partnership__cta {
+    text-decoration: none;
+    background-color: rgba(255, 198, 69, 1);
+    color: rgba(40, 83, 90, 1);
+    font-weight: 500;
+    padding: 14px 24px;
+    border-radius: 100px;
+}
+
+.partnership__details {
+    flex: 1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(40, 83, 90, 0.8);
+    padding: 20px;
+    max-width: 750px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.partnership__subtitle {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.certification-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 28px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.certification-card__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+}
+
+.certification-card__description {
+    font-size: 14px;
+}
+
+.partnership__contact {
+    margin: 16px 0 8px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .partnership {
+        display: block;
+    }
+
+    .partnership__info {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .partnership__details {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+/* Fim Seja Parceiro */
