@@ -1,4 +1,202 @@
+/* ========== VARIÁVEIS E CONFIGURAÇÕES GLOBAIS ========== */
+@charset "UTF-8";
+
+:root {
+  /* Cores */
+  --primary-color: #c00d7b;
+  --secondary-color: #28535a;
+  --light-color: #eaeaea67;
+  --text-color: #28535a;
+  --text-hover: #ff009db9;
+  --white: #fff;
+
+  /* Fontes */
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Rubik", sans-serif;
+  --font-size-base: 16px;
+}
+
+/* ========== RESET E ESTILOS BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding-top: 60px; /* Compensar header fixo */
+}
+
+/* ========== CABEÇALHO ========== */
 .header {
-  background-color: lightcoral;
-  color: #fff;
+  background-color: transparent;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(5px); /* Efeito de vidro moderno */
+}
+
+.header.scrolled {
+  background-color: var(--light-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== LOGOTIPO ========== */
+.header h1 {
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-hover);
+}
+
+/* ========== NAVEGAÇÃO PRINCIPAL ========== */
+.navh {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navh a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  transition: color 0.2s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navh a:hover {
+  color: var(--primary-color);
+}
+
+.navh a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.navh a:hover::after {
+  width: 100%;
+}
+
+/* ========== BOTÕES ========== */
+.BTN1 {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.625rem 1.5625rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: translateX(-2em);
+}
+
+.BTN1:hover {
+  background-color: var(--secondary-color);
+  transform: translateX(-2em) scale(1.05);
+}
+
+/* ========== MENU HAMBÚRGUER ========== */
+.menu-toggle {
+  display: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: var(--primary-color);
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Menu Mobile */
+  .navh {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding: 5rem 1rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .navh.active {
+    right: 0;
+  }
+
+  .navh a {
+    font-size: 1.125rem;
+    padding: 0.75rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  .menu-toggle.active {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .menu-toggle.active::before {
+    content: "✕";
+    font-size: 1.5rem;
+  }
+
+  .BTN1 {
+    display: none; /* Opcional: esconder botão em mobile */
+  }
+}
+
+/* Melhorias para telas maiores */
+@media (min-width: 1200px) {
+  .navh {
+    gap: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
 }
