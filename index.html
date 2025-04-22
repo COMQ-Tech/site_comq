@@ -1,133 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dados Institucionais</title>
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/dados-institucionais.css" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <!-- JS -->
-    <!-- <script src="js/app.js/" defer></script> -->
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMQ!</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JS -->
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER (CABEÇALHO) -->
+  <header class="header">
+    <div class="header__container">
+      <h1>COMQ!</h1>
+
+      <!-- BOTÃO MENU HAMBÚRGUER -->
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+      <!-- NAVEGAÇÃO -->
+      <nav>
+        <ul class="navh">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#depoimento">Depoimento</a></li>
+          <li><a href="#grupodetrabalho">Grupo de Trabalho</a></li>
+          <li><a href="#voluntario">Voluntários</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+        </ul>
+      </nav>
+
+      <!-- BOTÃO DE CONTATO -->
+      <button class="BTN1">Contato</button>
+    </div>
+  </header>
+
+  <main>
     <section class="container">
-        <!-- Início Dados Institucionais -->
-        <section class="sub_dados-institucionais">
-          <div class="sub-introductions">
-            <h2 class="titulos principal-title">Dados Institucionais</h2>
-            <p class="descriptions-cards descriptions-data">
-              Conheça nossa missão, visão e valores, e saiba como sua empresa pode se tornar
-              parceira do COMQ.
+      <!-- Início Dados Institucionais -->
+      <section class="sub_dados-institucionais">
+        <div class="sub-introductions">
+          <h2 class="titulos principal-title">Dados Institucionais</h2>
+          <p class="descriptions-cards descriptions-data">
+            Conheça nossa missão, visão e valores, e saiba como sua empresa pode se tornar
+            parceira do COMQ.
+          </p>
+        </div>
+        <div class="container_card">
+          <div class="container_card-infos">
+            <img src="./images/Overlay-missao.png" alt="Ícone de missão" class="image">
+            <h3 class="titulos secundario-title">Missão</h3>
+            <p class="descriptions-cards">
+              Conectar jovens e empreendedores do bairro Mário
+              Quintana a oportunidades de desenvolvimento pessoal e
+              profissional, promovendo a transformação social através
+              da educação e do trabalho.
             </p>
           </div>
-          <div class="container_card">
-              <div class="container_card-infos">
-                <img src="./images/Overlay-missao.png" alt="Ícone de missão" class="image">
-                <h3 class="titulos secundario-title">Missão</h3>
-                <p class="descriptions-cards">
-                  Conectar jovens e empreendedores do bairro Mário
-                  Quintana a oportunidades de desenvolvimento pessoal e
-                  profissional, promovendo a transformação social através
-                  da educação e do trabalho.
-                </p>
-              </div>
-              <div class="container_card-infos">
-                <img src="./images/Overlay-visao.png" alt="Ícone de visão" class="image">
-                <h3 class="titulos secundario-title">Visão</h3>
-                <p class="descriptions-cards">
-                  Ser reconhecido como um centro de referência em
-                  geração de oportunidades, contribuindo para a redução
-                  das desigualdades sociais e o desenvolvimento
-                  econômico sustentável da comunidade.
-                </p>
-              </div>
-              <div class="container_card-infos">
-                <img src="./images/Overlay-valores.png" alt="Ícone de valores" class="image">
-                <h3 class="titulos secundario-title">Valores</h3>
-                <ul class="descriptions-cards lista">
-                  <li>Compromisso com a comunidade</li>
-                  <li>Transparência em todas as ações</li>
-                  <li>Compromisso com a comunidade</li>
-                  <li>Inclusão e diversidade</li>
-                  <li>Inovação e criatividade</li>
-                  <li>Colaboração e trabalho em rede</li>
-                </ul>
-              </div>
-          </div>
-        </section>
-        <!-- Fim Dados Institucionais -->
-        <!-- Início Parceiros -->
-        <section class="container_parceiros">
-          <h2 class="titulos parceiros-titulos">Parceiros</h2>
-          <div class="container_parceiros-cards">
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
-          </div>
-        </section>
-        <!-- Fim Parceiros --> 
-        <!-- Início Seja um parceiro -->
-        <section class="partnership">
-          <div class="partnership__info">
-            <div class="partnership__header">
-              <img src="./images/SVG.png" alt="Ícone de Ilustração">
-              <h2 class="partnership__title">Seja um Parceiro</h2>
-            </div>
-            <p class="partnership__description">
-              Sua empresa pode fazer parte dessa transformação social. Ao se tornar parceira do COMQ, você contribui diretamente para o
-              desenvolvimento da comunidade e ganha visibilidade como uma organização socialmente responsável.
+          <div class="container_card-infos">
+            <img src="./images/Overlay-visao.png" alt="Ícone de visão" class="image">
+            <h3 class="titulos secundario-title">Visão</h3>
+            <p class="descriptions-cards">
+              Ser reconhecido como um centro de referência em
+              geração de oportunidades, contribuindo para a redução
+              das desigualdades sociais e o desenvolvimento
+              econômico sustentável da comunidade.
             </p>
-            <ul class="partnership__benefits">
-              <li class="partnership__benefit">
-                <img src="./images/first-icon.png" alt="Ilustração primeiro ícone">
-                Ofereça vagas de emprego ou estágio para jovens do bairro.
-              </li>
-              <li class="partnership__benefit">
-                <img src="./images/second-icon.png" alt="Ilustração segundo ícone">
-                Patrocine eventos, workshops ou cursos de capacitação.
-              </li>
-              <li class="partnership__benefit">
-                <img src="./images/three-icon.png" alt="Ilustração terceiro ícone">
-                Disponibilize profissionais para mentorias e palestras.
-              </li>
+          </div>
+          <div class="container_card-infos">
+            <img src="./images/Overlay-valores.png" alt="Ícone de valores" class="image">
+            <h3 class="titulos secundario-title">Valores</h3>
+            <ul class="descriptions-cards lista">
+              <li>Compromisso com a comunidade</li>
+              <li>Transparência em todas as ações</li>
+              <li>Compromisso com a comunidade</li>
+              <li>Inclusão e diversidade</li>
+              <li>Inovação e criatividade</li>
+              <li>Colaboração e trabalho em rede</li>
             </ul>
-            <a href="#" class="partnership__cta">Quero ser parceiro</a>
           </div>
-          
-          <div class="partnership__details">
-            <h3 class="partnership__subtitle">Certificações</h3>
-            <div class="certification-card">
-              <div class="certification-card__icon">
-                <img src="./images/certificacao.png" alt="Ícone de certificação">
-              </div>
-              <div class="certification-card__info">
-                <span class="certification-card__title">Certificação OSCIP</span>
-                <p class="certification-card__description">
-                  Organização da Sociedade Civil de Interesse Público
-                </p>
-              </div>
+        </div>
+      </section>
+      <!-- Fim Dados Institucionais -->
+
+      <!-- Início Parceiros -->
+      <section class="container_parceiros">
+        <h2 class="titulos parceiros-titulos">Parceiros</h2>
+        <div class="container_parceiros-cards">
+          <div class="card-parceiros">
+            <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
+          </div>
+          <div class="card-parceiros">
+            <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
+          </div>
+          <div class="card-parceiros">
+            <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
+          </div>
+          <div class="card-parceiros">
+            <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
+          </div>
+        </div>
+      </section>
+      <!-- Fim Parceiros -->
+
+      <!-- Início Seja um parceiro -->
+      <section class="partnership">
+        <div class="partnership__info">
+          <div class="partnership__header">
+            <img src="./images/SVG.png" alt="Ícone de Ilustração">
+            <h2 class="partnership__title">Seja um Parceiro</h2>
+          </div>
+          <p class="partnership__description">
+            Sua empresa pode fazer parte dessa transformação social. Ao se tornar parceira do COMQ, você contribui
+            diretamente para o
+            desenvolvimento da comunidade e ganha visibilidade como uma organização socialmente responsável.
+          </p>
+          <ul class="partnership__benefits">
+            <li class="partnership__benefit">
+              <img src="./images/first-icon.png" alt="Ilustração primeiro ícone">
+              Ofereça vagas de emprego ou estágio para jovens do bairro.
+            </li>
+            <li class="partnership__benefit">
+              <img src="./images/second-icon.png" alt="Ilustração segundo ícone">
+              Patrocine eventos, workshops ou cursos de capacitação.
+            </li>
+            <li class="partnership__benefit">
+              <img src="./images/three-icon.png" alt="Ilustração terceiro ícone">
+              Disponibilize profissionais para mentorias e palestras.
+            </li>
+          </ul>
+          <a href="#" class="partnership__cta">Quero ser parceiro</a>
+        </div>
+
+        <div class="partnership__details">
+          <h3 class="partnership__subtitle">Certificações</h3>
+          <div class="certification-card">
+            <div class="certification-card__icon">
+              <img src="./images/certificacao.png" alt="Ícone de certificação">
             </div>
-            
-            <h3 class="partnership__subtitle">Contato</h3>
-            <span class="partnership__contact">parcerias@comq.org.br</span>
-            <span class="partnership__contact">(51) 99999-9999</span>
+            <div class="certification-card__info">
+              <span class="certification-card__title">Certificação OSCIP</span>
+              <p class="certification-card__description">
+                Organização da Sociedade Civil de Interesse Público
+              </p>
+            </div>
           </div>
-        </section>
-        <!-- Fim Seja um parceiro -->
-    </section>  
-  </body>
+
+          <h3 class="partnership__subtitle">Contato</h3>
+          <span class="partnership__contact">parcerias@comq.org.br</span>
+          <span class="partnership__contact">(51) 99999-9999</span>
+        </div>
+      </section>
+      <!-- Fim Seja um parceiro -->
+    </section>
+  </main>
+</body>
+
 </html>
