@@ -142,39 +142,47 @@
         <!-- Início Parceiros -->
         <section class="container_parceiros">
           <h2 class="titulos parceiros-titulos">Parceiros</h2>
-          <div class="container_parceiros-cards">
-            <div class="card-parceiros">
-              <img
-                src="./images/parceiros.png"
-                alt="Imagem do parceiro da ONG"
-                loading="lazy"
-                decoding="async"
-              />
+
+          <div class="carrossel-wrapper">
+            <button class="carrossel-btn left" aria-label="Anterior">
+              &#10094;
+            </button>
+
+            <div class="carrossel-track">
+              <div class="card-parceiros">
+                <img src="./images/solo.png" alt="Parceiro Solo" />
+              </div>
+              <div class="card-parceiros">
+                <img
+                  src="./images/mulheres-convergencia.png"
+                  alt="Parceiro Mulheres em Convergência"
+                />
+              </div>
+              <div class="card-parceiros">
+                <img src="./images/logo-woman.png" alt="Parceiro Woman" />
+              </div>
+              <div class="card-parceiros">
+                <img
+                  src="./images/logo-despertar.png"
+                  alt="Parceiro Despertar"
+                />
+              </div>
+              <div class="card-parceiros">
+                <img
+                  src="./images/sabao-tingua.png"
+                  alt="Parceiro Sabão da Tingua"
+                />
+              </div>
+              <div class="card-parceiros">
+                <img
+                  src="./images/projeto-social.png"
+                  alt="Parceiro Projeto social"
+                />
+              </div>
             </div>
-            <div class="card-parceiros">
-              <img
-                src="./images/parceiros.png"
-                alt="Imagem do parceiro da ONG"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="card-parceiros">
-              <img
-                src="./images/parceiros.png"
-                alt="Imagem do parceiro da ONG"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="card-parceiros">
-              <img
-                src="./images/parceiros.png"
-                alt="Imagem do parceiro da ONG"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
+            <button class="carrossel-btn right" aria-label="Próximo">
+              &#10095;
+            </button>
           </div>
         </section>
         <!-- Fim Parceiros -->
@@ -183,12 +191,7 @@
         <section class="partnership">
           <div class="partnership__info">
             <div class="partnership__header">
-              <img
-                src="./images/SVG.png"
-                alt="Ícone de Ilustração"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src="./images/SVG.png" alt="Ícone de Ilustração" />
               <h2 class="partnership__title">Seja um Parceiro</h2>
             </div>
             <p class="partnership__description">
@@ -202,8 +205,6 @@
                 <img
                   src="./images/first-icon.png"
                   alt="Ilustração primeiro ícone"
-                  loading="lazy"
-                  decoding="async"
                 />
                 Ofereça vagas de emprego ou estágio para jovens do bairro.
               </li>
@@ -211,8 +212,6 @@
                 <img
                   src="./images/second-icon.png"
                   alt="Ilustração segundo ícone"
-                  loading="lazy"
-                  decoding="async"
                 />
                 Patrocine eventos, workshops ou cursos de capacitação.
               </li>
@@ -220,13 +219,17 @@
                 <img
                   src="./images/three-icon.png"
                   alt="Ilustração terceiro ícone"
-                  loading="lazy"
-                  decoding="async"
                 />
                 Disponibilize profissionais para mentorias e palestras.
               </li>
             </ul>
-            <a href="#" class="partnership__cta">Quero ser parceiro</a>
+            <a
+              href="https://wa.me/5551984386201"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="partnership__cta"
+              >Quero ser parceiro</a
+            >
           </div>
 
           <div class="partnership__details">
@@ -236,8 +239,6 @@
                 <img
                   src="./images/certificacao.png"
                   alt="Ícone de certificação"
-                  loading="lazy"
-                  decoding="async"
                 />
               </div>
               <div class="certification-card__info">
@@ -252,7 +253,13 @@
 
             <h3 class="partnership__subtitle">Contato</h3>
             <span class="partnership__contact">parcerias@comq.org.br</span>
-            <span class="partnership__contact">(51) 99999-9999</span>
+            <a
+              href="https://wa.me/5551984386201"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="partnership__contact"
+              >(51) 98438-6201</a
+            >
           </div>
         </section>
         <!-- Fim Seja um parceiro -->

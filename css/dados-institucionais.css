@@ -140,25 +140,63 @@
   text-align: center;
   margin: 32px 0 24px 0;
 }
-.container_parceiros-cards {
-  width: 100%;
-  max-width: 320px;
+
+.carrossel-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 0 32px;
+}
+
+.carrossel-track {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  background-color: rgba(255, 255, 255, 1);
+  transition: transform 0.3s ease-in-out;
+  gap: 16px;
 }
+
 .card-parceiros {
+  flex: 0 0 calc(25% - 12px); /* 4 por vez com gap */
+  background-color: #f9fafb;
   border-radius: 8px;
-  background-color: rgba(249, 250, 251, 1);
-  padding: 16px 104px;
-  margin-bottom: 32px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
+
 .card-parceiros img {
-  width: 96px;
-  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.carrossel-btn.left {
+  left: 0;
+}
+.carrossel-btn.right {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .card-parceiros {
+    flex: 0 0 calc(50% - 8px); /* 2 por vez no mobile */
+  }
+}
+
 /* Para dispositivos de 768px ou menos */
 @media (max-width: 768px) {
   .container_parceiros-cards {
@@ -293,6 +331,7 @@
 
 .partnership__contact {
   margin: 16px 0 8px 0;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Responsivo */
