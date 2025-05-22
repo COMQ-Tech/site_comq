@@ -12,7 +12,8 @@ Acessória (Brilho): #ffc645 (fundos claros, destaques positivos, textos sobre f
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --font-primary: "Roboto", sans-serif;
+  --font-primary: "Barlow Condensed", sans-serif;
+  --font-secondary: "Nunito", sans-serif; /* Corrigi o typo aqui (secundary → secondary) */
 }
 
 body,
@@ -24,6 +25,16 @@ html {
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Aplicando Barlow Condensed para todos os headings h1 até h5 */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-primary) !important;
+}
+
+/* Aplicando Nunito para parágrafos */
+p {
+  font-family: var(--font-secondary);
 }
 
 .container {
