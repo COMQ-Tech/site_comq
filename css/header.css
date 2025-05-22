@@ -11,8 +11,6 @@
   --white: #fff;
 
   /* Fontes */
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Rubik", sans-serif;
   --font-size-base: 16px;
 }
 
@@ -24,7 +22,7 @@
 }
 
 body {
-  font-family: var(--font-primary);
+  
   color: var(--text-color);
   line-height: 1.6;
   padding-top: 60px; /* Compensar header fixo */
