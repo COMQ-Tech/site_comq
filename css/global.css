@@ -11,7 +11,8 @@ Acessória (Brilho): #ffc645 (fundos claros, destaques positivos, textos sobre f
   --color-accent: #ffc645;
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-grey: #9ca3af;
+  --color-grey: #d1d5db;
+  --color-grey50: #9ca3af;
 
   --font-primary: "Roboto", sans-serif;
 }

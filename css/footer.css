@@ -23,7 +23,7 @@
 }
 
 .footer-subheading {
-  font-family: 'Barlow Condensed', sans-serif; /* Fonte específica para subtítulos */
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
@@ -126,7 +126,7 @@
 }
 
 .copyright {
-  color: var(--color-grey);
+  color: var(--color-grey50);
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -139,7 +139,7 @@
 }
 
 .footer-links a {
-  color: var(--color-grey);
+  color: var(--color-grey50);
   text-decoration: none;
   transition: color 0.3s ease;
   font-family: 'Nunito', sans-serif;
@@ -170,7 +170,6 @@
   }
 }
 
-/* Estilos para os ícones de contato */
 .contact-item {
   display: flex;
   align-items: flex-start;
@@ -181,7 +180,7 @@
 .contact-icon {
   color: var(--color-tertiary);
   font-size: 1rem;
-  margin-top: 0.2rem; /* Alinha melhor com o texto */
+  margin-top: 0.2rem;
 }
 
 .footer-address a {
@@ -193,4 +192,34 @@
 .footer-address a:hover {
   color: var(--color-tertiary);
   text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--color-white); 
+  width: 36px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+  color: var(--color-tertiary); 
+}
+
+.social-icons i {
+  font-size: 1.2rem;
 }
