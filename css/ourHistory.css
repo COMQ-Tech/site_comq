@@ -117,3 +117,45 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  .history {
+    padding: 4rem 0;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #ffc74583;
+    transform: translateX(-50%);
+  }
+
+  .timeline ul li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    width: 100%;
+  }
+
+  .cardContent {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .cardImg {
+    height: 12rem;
+    width: calc(100% + 2rem);
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    object-fit: cover;
+  }
+}
