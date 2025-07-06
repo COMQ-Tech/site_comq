@@ -179,8 +179,9 @@
 
 /* Início Seja Parceiro */
 .partnership {
-  max-width: 1504px;
-  min-height: 420px;
+  max-width: 1240px;
+  /* min-height: 420px; */
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -250,7 +251,7 @@
   background-color: rgba(40, 83, 90, 0.8);
   padding: 20px;
   max-width: 750px;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,19 +259,13 @@
 }
 
 .partnership__subtitle {
+  font-size: 24px;
+  font-weight: 700;
   color: #fff;
-  font-size: 20px;
-  margin-bottom: 16px;
 }
 
-.certification-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 30px 28px;
-  border-radius: 8px;
-  margin-bottom: 40px;
+.card_description {
+  margin-bottom: 38px;
 }
 
 .certification-card__title {
@@ -285,8 +280,14 @@
 }
 
 .partnership__contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   margin: 16px 0 8px 0;
   color: rgba(255, 255, 255, 0.9);
+  a {
+    color: rgba(255, 255, 255, 0.9);
+  }
 }
 
 /* Responsivo */
