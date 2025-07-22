@@ -22,6 +22,11 @@ const toggleMenu = () => {
   DOM_ELEMENTS.nav.classList.toggle("active")
   DOM_ELEMENTS.menuToggle.classList.toggle("active")
 
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
   // Acessibilidade: atualiza o aria-label do botão
   const isExpanded = DOM_ELEMENTS.menuToggle.classList.contains("active")
   DOM_ELEMENTS.menuToggle.setAttribute("aria-expanded", isExpanded)
