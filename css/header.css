@@ -22,7 +22,6 @@
 }
 
 body {
-  
   color: var(--text-color);
   line-height: 1.6;
   padding-top: 60px; /* Compensar header fixo */
@@ -87,7 +86,7 @@ body {
 }
 
 .navh a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -144,6 +143,10 @@ body {
     padding: 0.5rem 1rem;
   }
 
+  .menu-toggle {
+    display: flex;
+  }
+
   /* Menu Mobile */
   .navh {
     flex-direction: column;
@@ -174,7 +177,6 @@ body {
     position: relative;
     top: auto;
     right: auto;
-   
   }
 
   .menu-toggle.active {
@@ -188,18 +190,23 @@ body {
   }
 
   .BTN1 {
-  display: none;   /* Opcional: esconder botão em mobile */
-  
+    display: none; /* Opcional: esconder botão em mobile */
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /* Melhorias para telas maiores */
 @media (min-width: 1200px) {
   .navh {
     gap: 2rem;
-  }
-}
-  
-  .header h1 {
-    font-size: 1.5rem;
   }
 }
