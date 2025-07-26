@@ -173,7 +173,7 @@ body {
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
     position: relative;
     top: auto;
     right: auto;
@@ -193,20 +193,14 @@ body {
     display: none; /* Opcional: esconder botão em mobile */
   }
 
+  /* Melhorias para telas maiores */
+  @media (min-width: 1200px) {
+    .navh {
+      gap: 2rem;
+    }
+  }
+
   .header h1 {
     font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
-/* Melhorias para telas maiores */
-@media (min-width: 1200px) {
-  .navh {
-    gap: 2rem;
   }
 }
