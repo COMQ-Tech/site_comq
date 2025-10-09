@@ -1,21 +1,42 @@
 .site-footer {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: 3rem 0;
-  font-family: 'Nunito', sans-serif;
+  background-color: #215A5A; 
+  color: #fff;
+}
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 60px 0; 
+}
+
+.footer-col a:hover {
+  color: #ff8c42;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
 }
 
 .footer-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  padding-bottom: 40px; 
+  border-bottom: 1px solid #377777;
+  margin-bottom: 30px;
 }
 
 .footer-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
 }
 
+.footer-text {
+  color: #dcecec;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 .footer-heading {
   font-size: 1.5rem;
   font-weight: 700;
@@ -30,6 +51,7 @@
   line-height: 28px;
   margin-bottom: 1rem;
   color: var(--color-white);
+
 }
 
 .footer-text,
@@ -42,7 +64,7 @@
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  color: (--color-tertiary);
+  color: #dcecec;
 }
 
 .footer-text {
@@ -50,28 +72,62 @@
   margin-bottom: 1rem;
 }
 
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
 .footer-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
 }
 
 .footer-list a {
-  color: var(--color-white);
+  color: #dcecec;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .footer-list a:hover {
-  color: var(--color-tertiary);
+  color: #ff7b2e;
+}
+
+.footer-address .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  color: #ff7b2e;
 }
 
 .footer-address a {
-  color: var(--color-white);
+  color: #dcecec;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.newsletter button {
+  background-color: #ff7a29;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.newsletter button:hover {
+  background-color: #ff974d;
 }
 
 .newsletter-form label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px 12px 12px 12px
 }
 
 .input-group {
@@ -81,92 +137,101 @@
 }
 
 .input-group input {
-  flex: 1;
-  padding: 0.5rem;
-  border: 1px solid var(--color-accent);
-  border-radius: 4px;
-  color: var(--color-black);
+  flex: 1; 
+  padding: 10px;
+  border: none;
+  border-radius:12px 12px 12px 12px; 
+  outline: none;
+  background-color: #f0f0f0; 
+  color: #333
 }
 
 .input-group input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: #888
 }
 
 .input-group button {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  background-color: var(--color-tertiary);
-  color: var(--color-white);
+  background-color: #ff7b2e;
+  color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  padding: 10px 18px;
+  border-radius: 12px 12px 12px 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
+  font-weight: 60;
+  transition: 0.3s;
 }
 
 .input-group button:hover {
-  background-color: var(--color-accent);
+  background-color: #ff974d;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 2rem;
-  color:(--color-grey);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  color: #dcdcdc;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 3px ;
+ 
+ 
+}
+
+.footer-bottom p {
   font-size: 14px;
-  line-height: 20px;
+  color: #ccc;
 }
 
 .copyright {
   color: var(--color-grey50);
-  font-family: 'Nunito', sans-serif;
+  white-space: nowrap;
+  font-family:'Nunito', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 2px;
+  margin-right: 210px;
 }
 
 .footer-links {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap; 
+  justify-content: center;
+  white-space: nowrap; 
+  flex-shrink: 0;
+  padding: 20px 0px 0px 100px
 }
 
 .footer-links a {
-  color: var(--color-grey50);
+  color: #ccc;
+  margin-left: 15px;
   text-decoration: none;
-  transition: color 0.3s ease;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
+  transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: var(--color-tertiary);
-  text-decoration: underline;
+  color: #ff8c42;
 }
 
 @media (max-width: 768px) {
   .footer-top {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    
+  }
+ .copyright {
+     margin-bottom: 15px;
+     margin-right: 0; 
+     
   }
 
   .footer-links {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
   }
 }
 
@@ -190,36 +255,24 @@
 }
 
 .footer-address a:hover {
-  color: var(--color-tertiary);
-  text-decoration: underline;
+  color: #ff7b2e
 }
 
 .social-icons {
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
+} 
 
 .social-icons a {
-  color: var(--color-white); 
-  width: 36px;
-  font-size: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.3s ease; 
+  color: #fff;
 }
 
 .social-icons a:hover {
-  color: var(--color-tertiary); 
+   color: #ff8c42;
 }
 
 .social-icons i {
   font-size: 1.2rem;
 }
+
