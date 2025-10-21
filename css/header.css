@@ -24,25 +24,27 @@
 body {
   color: var(--text-color);
   line-height: 1.6;
-  padding-top: 60px; /* Compensar header fixo */
 }
 
 /* ========== CABEÇALHO ========== */
 .header {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 100%;
   padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1002;
   transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(5px); /* Efeito de vidro moderno */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header.scrolled {
-  background-color: var(--light-color);
+  background-color: rgba(234, 234, 234, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
 
 .header__container {
@@ -55,6 +57,12 @@ body {
 }
 
 /* ========== LOGOTIPO ========== */
+.header__logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
 .header h1 {
   font-family: var(--font-secondary);
   font-size: 1.25rem;
@@ -128,19 +136,54 @@ body {
   border: none;
   color: var(--text-color);
   z-index: 1001;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   display: block;
   margin-left: auto; /* força o ícone pro canto direito */
+  padding: 0.5rem;
 }
 
 .menu-toggle:hover {
   color: var(--primary-color);
 }
 
+/* Transformar hambúrguer em X quando ativo */
+.menu-toggle.active {
+  color: var(--primary-color);
+}
+
+/* ========== OVERLAY DO MENU MOBILE ========== */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Prevenir scroll quando menu está aberto */
+body.menu-open {
+  overflow: hidden;
+}
+
 /* ========== RESPONSIVIDADE ========== */
 @media (max-width: 768px) {
-  .header__container {
+  .header {
     padding: 0.5rem 1rem;
+  }
+
+  .header__container {
+    padding: 0;
+    min-height: auto;
   }
 
   .menu-toggle {
@@ -159,8 +202,10 @@ body {
     background: var(--white);
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease-in-out;
-    padding: 5rem 1rem 1rem;
+    padding: 4rem 1rem 1rem;
     gap: 1.5rem;
+    z-index: 1000;
+    overflow-y: auto;
   }
 
   .navh.active {
@@ -168,8 +213,8 @@ body {
   }
 
   .navh a {
-    font-size: 1.125rem;
-    padding: 0.75rem;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 
   .menu-toggle {
@@ -177,24 +222,26 @@ body {
     position: relative;
     top: auto;
     right: auto;
+    padding: 0.25rem;
+    font-size: 1.5rem;
   }
 
   .menu-toggle.active {
     position: fixed;
     right: 1rem;
-    top: 1rem;
-  }
-
-  .menu-toggle.active::before {
-    font-size: 1.5rem;
+    top: 0.75rem;
   }
 
   .BTN1 {
     display: none; /* Opcional: esconder botão em mobile */
   }
 
+  .header__logo {
+    height: 35px;
+  }
+
   .header h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 

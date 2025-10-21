@@ -1,5 +1,6 @@
 .history {
-  padding: 16px 0;
+  width: 100%;
+  padding: 3rem 0;
   background-color: #fff;
 }
 
@@ -16,7 +17,14 @@
 .timeline {
   position: relative;
   margin: 0 auto;
-  width: 95%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .timeline {
+    padding: 0 2rem;
+  }
 }
 
 .timeline ul li {

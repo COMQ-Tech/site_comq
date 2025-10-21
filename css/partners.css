@@ -1,4 +1,5 @@
 .partners-section {
+  width: 100%;
   padding: 4rem 0;
   background-color: #f8f9fa;
 }
@@ -28,6 +29,12 @@
   padding: 0 1rem;
 }
 
+@media (min-width: 768px) {
+  .partners-grid {
+    padding: 0 2rem;
+  }
+}
+
 .partner-card {
   border-radius: 10px;
   overflow: hidden;
@@ -38,6 +45,7 @@
   color: white;
   width: 100%;
   align-items: stretch;
+  height: 350px;
 }
 
 .partner-card.secondary {
@@ -81,7 +89,7 @@
 .partner-image {
   flex: 0 0 35%;
   z-index: 1;
-  max-height: 100%;
+  height: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -128,13 +136,13 @@
   
   .partner-card {
     flex-direction: column;
-    
+    height: auto;
   }
-  
+
   .partner-image {
     flex: 0 0 auto;
     width: 100%;
-    height: 360px; /* Altura fixa para mobile */
+    height: 300px;
   }
   
   .partner-info {
@@ -189,9 +197,13 @@
     width: 100%;
     height: 200px;
   }
-  
+
   .partner-info {
     flex: 0 0 auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

@@ -3,11 +3,14 @@
   display: grid;
   padding-top: 66px;
   padding-bottom: clamp(96px, 4vw, 110px);
+  width: 100%;
+  overflow: hidden;
 }
 
 .hero__container {
   z-index: 2;
   color: #fff;
+  width: 100%;
 }
 
 .hero__container h1 {
@@ -28,6 +31,29 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hero__container {
+    text-align: center;
+  }
+
+  .hero__container h1 {
+    max-width: 100%;
+  }
+
+  .hero__container p {
+    max-width: 100%;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
 }
 
 .hero__buttons a {

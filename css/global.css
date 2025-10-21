@@ -27,6 +27,12 @@ html {
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-padding-top: 80px; /* Compensar header fixo ao fazer scroll */
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Aplicando Barlow Condensed para todos os headings h1 até h5 */
@@ -41,7 +47,13 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1536px;
-  padding-inline: 2rem;
+  max-width: 1200px;
+  padding-inline: 1rem;
   margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 2rem;
+  }
 }

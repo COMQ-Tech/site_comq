@@ -7,22 +7,37 @@
 /* Fim Components */
 
 /* Container */
-.container {
-  padding: 3vh 5vw;
+.dados_container {
+  width: 100%;
+  background-color: rgba(249, 250, 251, 1);
+  padding: 3vh 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(249, 250, 251, 1);
+}
+
+@media (min-width: 768px) {
+  .dados_container {
+    padding: 3vh 2rem;
+  }
 }
 /* Fim Container */
 
 /* Dados institucionais */
+.sub_dados-institucionais {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sub-introductions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .sub-introductions .principal-title {
   font-size: 36px;
@@ -40,6 +55,7 @@
 }
 /* Container institucional */
 .container_card {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 32px;
@@ -125,6 +141,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
   padding: 24px 0;
   min-height: auto;
   margin-top: 32px;
@@ -179,8 +196,8 @@
 
 /* Início Seja Parceiro */
 .partnership {
-  max-width: 1240px;
-  /* min-height: 420px; */
+  width: 100%;
+  max-width: 1200px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -299,11 +316,27 @@
   .partnership__info {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .partnership__details {
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .partnership__benefits {
+    text-align: left;
+  }
+
+  .partnership__contact {
+    justify-content: center;
   }
 }
 /* Fim Seja Parceiro */

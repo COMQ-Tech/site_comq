@@ -4,7 +4,10 @@
 const DOM_ELEMENTS = {
   header: document.querySelector(".header"),
   menuToggle: document.querySelector(".menu-toggle"),
+  menuIcon: document.querySelector(".menu-icon"),
   nav: document.querySelector(".navh"),
+  menuOverlay: document.querySelector(".menu-overlay"),
+  body: document.body,
 }
 
 // Função para manipulação do header durante o scroll
@@ -19,21 +22,42 @@ const handleScroll = () => {
 
 // Função para manipulação do menu hambúrguer
 const toggleMenu = () => {
-  DOM_ELEMENTS.nav.classList.toggle("active")
+  const isActive = DOM_ELEMENTS.nav.classList.toggle("active")
   DOM_ELEMENTS.menuToggle.classList.toggle("active")
+  DOM_ELEMENTS.menuOverlay.classList.toggle("active")
 
+  // Mudar ícone entre hambúrguer e X
+  if (DOM_ELEMENTS.menuIcon) {
+    DOM_ELEMENTS.menuIcon.innerHTML = isActive ? "&#10005;" : "&#9776;"
+  }
 
-menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-});
+  // Prevenir scroll do body quando menu está aberto
+  if (isActive) {
+    DOM_ELEMENTS.body.classList.add("menu-open")
+  } else {
+    DOM_ELEMENTS.body.classList.remove("menu-open")
+  }
 
   // Acessibilidade: atualiza o aria-label do botão
-  const isExpanded = DOM_ELEMENTS.menuToggle.classList.contains("active")
-  DOM_ELEMENTS.menuToggle.setAttribute("aria-expanded", isExpanded)
+  DOM_ELEMENTS.menuToggle.setAttribute("aria-expanded", isActive)
   DOM_ELEMENTS.menuToggle.setAttribute(
     "aria-label",
-    isExpanded ? "Fechar menu" : "Abrir menu"
+    isActive ? "Fechar menu" : "Abrir menu"
   )
+}
+
+// Função para fechar o menu ao clicar no overlay
+const closeMenuOnOverlayClick = () => {
+  if (DOM_ELEMENTS.nav.classList.contains("active")) {
+    toggleMenu()
+  }
+}
+
+// Função para fechar o menu ao clicar em um link
+const closeMenuOnLinkClick = () => {
+  if (DOM_ELEMENTS.nav.classList.contains("active")) {
+    toggleMenu()
+  }
 }
 
 // Inicialização do código quando o DOM estiver pronto
@@ -53,6 +77,17 @@ document.addEventListener("DOMContentLoaded", () => {
     DOM_ELEMENTS.menuToggle.setAttribute("aria-expanded", "false")
     DOM_ELEMENTS.menuToggle.setAttribute("aria-controls", "main-navigation")
     DOM_ELEMENTS.nav.setAttribute("id", "main-navigation")
+
+    // Fechar menu ao clicar no overlay
+    if (DOM_ELEMENTS.menuOverlay) {
+      DOM_ELEMENTS.menuOverlay.addEventListener("click", closeMenuOnOverlayClick)
+    }
+
+    // Fechar menu ao clicar em links de navegação
+    const navLinks = DOM_ELEMENTS.nav.querySelectorAll("a")
+    navLinks.forEach(link => {
+      link.addEventListener("click", closeMenuOnLinkClick)
+    })
   }
 })
 
@@ -64,6 +99,10 @@ window.addEventListener("beforeunload", () => {
 
   if (DOM_ELEMENTS.menuToggle) {
     DOM_ELEMENTS.menuToggle.removeEventListener("click", toggleMenu)
+  }
+
+  if (DOM_ELEMENTS.menuOverlay) {
+    DOM_ELEMENTS.menuOverlay.removeEventListener("click", closeMenuOnOverlayClick)
   }
 })
 
