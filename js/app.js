@@ -11,14 +11,14 @@ const DOM_ELEMENTS = {
 }
 
 // Função para manipulação do header durante o scroll
-const handleScroll = () => {
-  const scrollThreshold = 50
-  if (window.scrollY > scrollThreshold) {
-    DOM_ELEMENTS.header.classList.add("scrolled")
-  } else {
-    DOM_ELEMENTS.header.classList.remove("scrolled")
-  }
-}
+// const handleScroll = () => {
+//   const scrollThreshold = 50
+//   if (window.scrollY > scrollThreshold) {
+//     DOM_ELEMENTS.header.classList.add("scrolled")
+//   } else {
+//     DOM_ELEMENTS.header.classList.remove("scrolled")
+//   }
+// }
 
 // Função para manipulação do menu hambúrguer
 const toggleMenu = () => {
@@ -63,12 +63,12 @@ const closeMenuOnLinkClick = () => {
 // Inicialização do código quando o DOM estiver pronto
 document.addEventListener("DOMContentLoaded", () => {
   // Verifica se os elementos existem antes de adicionar event listeners
-  if (DOM_ELEMENTS.header) {
-    window.addEventListener("scroll", handleScroll)
+  // if (DOM_ELEMENTS.header) {
+  //   window.addEventListener("scroll", handleScroll)
 
-    // Executa uma vez no carregamento para verificar estado inicial
-    handleScroll()
-  }
+  //   // Executa uma vez no carregamento para verificar estado inicial
+  //   handleScroll()
+  // }
 
   if (DOM_ELEMENTS.menuToggle && DOM_ELEMENTS.nav) {
     DOM_ELEMENTS.menuToggle.addEventListener("click", toggleMenu)
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Boa prática: Remove event listeners quando não forem mais necessários
 window.addEventListener("beforeunload", () => {
   if (DOM_ELEMENTS.header) {
-    window.removeEventListener("scroll", handleScroll)
+    // window.removeEventListener("scroll", handleScroll)
   }
 
   if (DOM_ELEMENTS.menuToggle) {
