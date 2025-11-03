@@ -1,524 +1,444 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COMQ!</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./images/logo-comq.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMQ!</title>
 
-    <!-- FONTES  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/logo-comq.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- FONTES  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- JS -->
-    <script src="js/app.js" defer></script>
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 
-  <body>
-    <!-- HEADER (CABEÇALHO) -->
-    <header class="header">
-      <div class="header__container">
-        <img src="./images/logo-comq.png" alt="COMQ" class="header__logo" />
+  <!-- JS -->
+  <script src="js/app.js" defer></script>
+</head>
 
-        <!-- BOTÃO MENU HAMBÚRGUER -->
-        <button class="menu-toggle" aria-label="Abrir menu">
-          <span class="menu-icon">&#9776;</span>
-        </button>
+<body>
+  <!-- HEADER (CABEÇALHO) -->
+  <header class="header">
+    <div class="header__container">
+      <img src="./images/logo-comq.png" alt="COMQ" class="header__logo" />
 
-        <!-- NAVEGAÇÃO -->
-        <nav>
-          <ul class="navh">
+      <!-- BOTÃO MENU HAMBÚRGUER -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span class="menu-icon">&#9776;</span>
+      </button>
+
+      <!-- NAVEGAÇÃO -->
+      <nav>
+        <ul class="navh">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#grupodetrabalho">Comunidade</a></li>
+          <li><a href="#voluntario">Voluntários</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+        </ul>
+      </nav>
+
+      <!-- BOTÃO DE CONTATO
+        <button class="BTN1">Contato</button>
+         -->
+    </div>
+  </header>
+
+  <!-- OVERLAY DO MENU MOBILE -->
+  <div class="menu-overlay"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__container container">
+        <h1>Transformando vidas através de oportunidades</h1>
+        <p>
+          O Centro de Oportunidades do MQ (COMQ) é uma iniciativa
+          que conecta jovens e empreendedores do bairro a oportunidades de
+          emprego, capacitação e desenvolvimento. Acreditamos no potencial
+          transformador da comunidade quando recebe as ferramentas certas.
+        </p>
+        <div class="hero__buttons">
+          <a href="#historia" class="hero__buttons-accent">Conheça nossos projetos</a>
+          <a href="#voluntario" class="hero__buttons-white">Seja um parceiro</a>
+        </div>
+      </div>
+
+      <div class="hero__bg">
+        <img src="./images/Capa_alternativa_1 (1).jpeg" alt="Imagem de fundo" aria-hidden="true" width="1920"
+          height="564" decoding="async" />
+      </div>
+    </section>
+    <section id="sobre" class="dados_container">
+      <!-- Início Dados Institucionais -->
+      <section class="sub_dados-institucionais">
+        <div class="sub-introductions">
+          <h2 class="titulos principal-title">Dados Institucionais</h2>
+          <p class="descriptions-cards descriptions-data">
+            Conheça nossa missão, visão e valores, e saiba como sua empresa
+            pode se tornar parceira do COMQ.
+          </p>
+        </div>
+        <div class="container_card">
+          <div class="container_card-infos">
+            <img src="./images/Overlay-missao.png" alt="Ícone de missão" class="image" loading="lazy"
+              decoding="async" />
+            <h3 class="titulos secundario-title">Missão</h3>
+            <p class="descriptions-cards">
+              Conectar jovens e empreendedores do bairro Mário Quintana a
+              oportunidades de desenvolvimento pessoal e profissional,
+              promovendo a transformação social através da educação e do
+              trabalho.
+            </p>
+          </div>
+          <div class="container_card-infos">
+            <img src="./images/Overlay-visao.png" alt="Ícone de visão" class="image" loading="lazy" decoding="async" />
+            <h3 class="titulos secundario-title">Visão</h3>
+            <p class="descriptions-cards">
+              Ser reconhecido como um centro de referência em geração de
+              oportunidades, contribuindo para a redução das desigualdades
+              sociais e o desenvolvimento de renda da comunidade.
+            </p>
+          </div>
+          <div class="container_card-infos">
+            <img src="./images/Overlay-valores.png" alt="Ícone de valores" class="image" loading="lazy"
+              decoding="async" />
+            <h3 class="titulos secundario-title">Valores</h3>
+            <ul class="descriptions-cards lista">
+              <li>Compromisso com a comunidade</li>
+              <li>Compromisso com a comunidade</li>
+              <li>Inclusão e diversidade</li>
+              <li>Inovação e criatividade</li>
+              <li>Colaboração e trabalho em rede</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Fim Dados Institucionais -->
+
+      <!-- Início Parceiros -->
+      <section id="parceiros" class="container_parceiros">
+        <div class="sub-introductions">
+          <h2 class="titulos principal-title">Quem caminha com o COMQ</h2>
+          <p class="descriptions-cards descriptions-data">
+            Iniciativas, projetos e organizações que acreditam no poder das conexões para transformar realidades.
+          </p>
+        </div>
+        <div class="container_parceiros-cards">
+          <div class="cards-images" data-partner="woman">
+            <img src="./images/logo-woman.png" alt="Woman Logo" />
+          </div>
+          <div class="cards-images" data-partner="despertar">
+            <img src="./images/logo-despertar.png" alt="Despertar Logo" />
+          </div>
+          <div class="cards-images" data-partner="convergencia">
+            <img src="./images/mulheres-convergencia.png" alt="Mulheres Convergência Logo" />
+          </div>
+          <div class="cards-images" data-partner="tingua">
+            <img src="./images/sabao-tingua.png" alt="Sabão Tinguá Logo" />
+          </div>
+          <div class="cards-images" data-partner="social">
+            <img src="./images/projeto-social.png" alt="Projeto Social Logo" />
+          </div>
+          <div class="cards-images" data-partner="solo">
+            <img src="./images/solo.png" alt="Solo Logo" />
+          </div>
+        </div>
+      </section>
+      <!-- Fim Parceiros -->
+
+    </section>
+    <!-- Fim Dados Institucionais Container -->
+
+    <!-- Início Seja um parceiro -->
+    <section id="voluntario" class="partnership">
+      <div class="partnership__info">
+        <div class="partnership__header">
+          <img src="./images/SVG.png" alt="Ícone de Ilustração" />
+          <h2 class="partnership__title">Seja um Parceiro</h2>
+        </div>
+        <p class="partnership__description">
+          Sua empresa pode fazer parte dessa transformação social. Ao se
+          tornar parceira do COMQ, você contribui diretamente para o
+          desenvolvimento da comunidade e ganha visibilidade como uma
+          organização socialmente responsável.
+        </p>
+        <ul class="partnership__benefits">
+          <li class="partnership__benefit">
+            <img src="./images/first-icon.png" alt="Ilustração primeiro ícone" />
+            Ofereça vagas de emprego ou estágio para jovens do bairro.
+          </li>
+          <li class="partnership__benefit">
+            <img src="./images/second-icon.png" alt="Ilustração segundo ícone" />
+            Patrocine eventos, workshops ou cursos de capacitação.
+          </li>
+          <li class="partnership__benefit">
+            <img src="./images/three-icon.png" alt="Ilustração terceiro ícone" />
+            Disponibilize profissionais para mentorias e palestras.
+          </li>
+        </ul>
+        <a href="https://wa.me/5551984386201" target="_blank" rel="noopener noreferrer" class="partnership__cta">Quero
+          ser parceiro</a>
+      </div>
+
+      <div class="partnership__details">
+        <div class="partnership__header">
+          <img src="./images/SVG.png" alt="Ícone de Ilustração" />
+          <h2 class="partnership__title">Seja um Voluntário</h2>
+        </div>
+        <div class="card_description">
+          <p class="partnership__description">
+            Quer transformar vidas com um pequeno gesto? Torne-se
+            voluntário e faça parte de um projeto que impacta diretamente
+            a comunidade. Sua ajuda faz toda a diferença junte-se a nós e
+            seja a mudança que você quer ver no mundo!
+          </p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJdvSavlrLVEg4owRK8hGunAH886zovvgiHbrnvE6mGTMuvA/viewform"
+            target="_blank" rel="noopener noreferrer" class="partnership__cta">Quero ser um voluntário</a>
+        </div>
+        <h3 class="partnership__subtitle">Contato</h3>
+        <span class="partnership__contact">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:Comq.projeto@gmail.com" target="_blank" rel="noopener noreferrer">Comq.projeto@gmail.com</a>
+        </span>
+        <a href="https://wa.me/555189073820" target="_blank" rel="noopener noreferrer" class="partnership__contact">
+          <i class="fab fa-whatsapp"></i>
+          +55 51 8907-3820</a>
+      </div>
+    </section>
+    <!-- Fim Seja um parceiro -->
+
+    <section id="grupodetrabalho" class="partners-section">
+      <h2 class="section-title">Entre na nossa comunidade!</h2>
+      <p class="section-subtitle">
+        Conheça as pessoas que crescem conosco
+      </p>
+
+      <div class="partners-grid">
+        <div class="partner-card">
+          <div class="partner-image">
+            <img src="./images/jovens.png" alt="Rithiele Silva " loading="lazy" />
+          </div>
+          <div class="partner-info">
+            <h1 class="partner-name">Rithiele Silva</h1>
+            <p class="partner-title">
+              Curso Técnico de Enfermagem e<br />Jovem Aprendiz no SENAC
+              RS
+            </p>
+            <p class="partner-description">
+              Desafios superados pelos grupos do COMQ e conquistado curso
+              de enfermagem gratuita.
+            </p>
+            <a href="https://chat.whatsapp.com/IEoF66GNAYq1VtF02pPiy5" class="partner-button">
+              <strong>Entrar no grupo de jovens</strong>
+            </a>
+          </div>
+        </div>
+        <div class="partner-card secondary">
+          <div class="partner-image">
+            <img src="./images/empreendedores.png" alt="Caren Michele" loading="lazy" />
+          </div>
+          <div class="partner-info">
+            <h3 class="partner-name">Caren Michele</h3>
+            <h5 class="partner-title">
+              Especialista de Vendas,<br />
+              CEO da Beutifiul Hair
+            </h5>
+            <h5 class="partner-description">
+              Assisto antes para empreendedoras todo nós no encontro das
+              Empreendedoras do COMQ!
+            </h5>
+            <a href="https://chat.whatsapp.com/B6ZCV0jxCsY07b8X8Rkf3N" class="partner-button"><strong> Entrar no grupo
+                de Empreendedoras </strong></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia" class="history">
+      <div class="sub-introductions">
+        <h2 class="titulos principal-title">Nossa história</h2>
+        <p class="descriptions-cards descriptions-data">
+          Conheça os principais marcos na trajetória da COMQ <br />
+          e como temos impactado nossa comunidade
+        </p>
+      </div>
+
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="cardContent">
+              <img class="cardImg" src="./images/Lançamento_do_comq_alternativa_1.jpeg" alt="Imagem de fundo"
+                aria-hidden="true" height="12rem" width="100%" loading="lazy" decoding="async" />
+              <h4>Agosto 2024</h4>
+              <h3>Lançamento do COMQ</h3>
+              <p>
+                Lançamento oficial do Centro de Oportunidades do MQ (COMQ) com o objetivo de conectar jovens a
+                oportunidades
+                de emprego.
+              </p>
+            </div>
+            <div class="point"></div>
+          </li>
+
+          <li>
+            <div class="cardContent">
+              <img class="cardImg" src="./images/Parceria_senac_alternativa_2.jpeg" alt="Imagem de fundo"
+                aria-hidden="true" height="12rem" width="100%" loading="lazy" decoding="async" />
+
+              <h4>Setembro 2024</h4>
+              <h3>Parceria com SENAC</h3>
+              <p>
+                Estabelecimento de parceria estratégica com o SENAC para
+                oferecer cursos profissionalizantes gratuitos para jovens do
+                bairro.
+              </p>
+            </div>
+            <div class="point"></div>
+          </li>
+
+          <li>
+            <div class="cardContent">
+              <img class="cardImg" src="./images/Evento_empreendedoras_alternativa_1.jpeg" alt="Imagem de fundo"
+                aria-hidden="true" height="12rem" width="100%" loading="lazy" decoding="async" />
+              <h4>Novembro 2024</h4>
+              <h3>Evento Online para Empreendedoras</h3>
+              <p>
+                Primeiro grande evento virtual para capacitação de mulheres empreendedoras da comunidade que acabou
+                virando um evento mensal!
+              </p>
+            </div>
+            <div class="point"></div>
+          </li>
+
+          <li>
+            <div class="cardContent">
+              <img class="cardImg" src="./images/Expofavela_alternativa_1.jpeg" alt="Imagem de fundo" aria-hidden="true"
+                height="12rem" width="100%" loading="lazy" decoding="async" />
+              <h4>Novembro 2024</h4>
+              <h3>Participação na Expofavela RS</h3>
+              <p>
+                COMQ marca presença na Expofavela, apresentando projetos e conectando empreendedores locais a novas
+                oportunidades de mercado. O COMQ ficou entre os top 15 projetos selecionados!
+              </p>
+            </div>
+            <div class="point"></div>
+          </li>
+
+          <li>
+            <div class="cardContent">
+              <img class="cardImg" src="./images/aniversario1ano.jpeg" alt="Imagem de fundo" aria-hidden="true"
+                height="12rem" width="100%" loading="lazy" decoding="async" />
+              <h4>Agosto 2025</h4>
+              <h3>Aniversário de 1 ano do COMQ</h3>
+              <p>
+                Celebramos nosso primeiro ano de atuação com muita gratidão, conquistas e reconhecimento. Alguns
+                parceiros foram premiados por sua contribuição nessa caminhada. Seguimos juntos construindo
+                oportunidades no Mário Quintana!
+              </p>
+            </div>
+            <div class="point"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal dos Parceiros -->
+  <div id="partner-modal" class="partner-modal">
+    <div class="partner-modal-content">
+      <button class="partner-modal-close" aria-label="Fechar modal">&times;</button>
+      <div class="partner-modal-header">
+        <img id="modal-partner-logo" src="" alt="Logo do parceiro" class="modal-partner-logo" />
+        <h3 id="modal-partner-name"></h3>
+      </div>
+      <div class="partner-modal-body">
+        <p id="modal-partner-description"></p>
+        <div class="partner-modal-info">
+          <h4>Informações</h4>
+          <ul id="modal-partner-details"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-section">
+          <h2 class="footer-heading">COMQ</h2>
+          <p class="footer-text">
+            Centro de Oportunidades do MQ - Transformando vidas através de oportunidades desde 2024.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/comq.projeto/" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/comq-projeto/" aria-label="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="footer-section">
+          <h3 class="footer-subheading">Links Rápidos</h3>
+          <ul class="footer-list">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#historia">História</a></li>
             <li><a href="#grupodetrabalho">Comunidade</a></li>
             <li><a href="#voluntario">Voluntários</a></li>
             <li><a href="#parceiros">Parceiros</a></li>
           </ul>
-        </nav>
+        </div>
 
-        <!-- BOTÃO DE CONTATO
-        <button class="BTN1">Contato</button>
-         -->
-      </div>
-    </header>
+        <!-- Contato -->
+        <div class="footer-section">
+          <h3 class="footer-subheading">Contato</h3>
+          <address class="footer-address">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>Bairro Mário Quintana, Porto Alegre/RS</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <a href="mailto:centato@comq.org.br">comq.projeto@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt contact-icon"></i>
+              <a href="tel:+555189073820">+55 51 8907-3820</a>
+            </div>
+          </address>
+        </div>
 
-    <!-- OVERLAY DO MENU MOBILE -->
-    <div class="menu-overlay"></div>
-
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero__container container">
-          <h1>Transformando vidas através de oportunidades</h1>
-          <p>
-            O Centro de Oportunidades do MQ (COMQ) é uma iniciativa
-            que conecta jovens e empreendedores do bairro a oportunidades de
-            emprego, capacitação e desenvolvimento. Acreditamos no potencial
-            transformador da comunidade quando recebe as ferramentas certas.
+        <!-- Newsletter -->
+        <div class="footer-section">
+          <h3 class="footer-subheading">Newsletter</h3>
+          <p class="footer-text">
+            Receba novidades sobre oportunidades, eventos e histórias de
+            sucesso.
           </p>
-          <div class="hero__buttons">
-            <a href="#" class="hero__buttons-accent">Conheça nossos projetos</a>
-            <a href="#" class="hero__buttons-white">Seja um parceiro</a>
-          </div>
+          <form class="newsletter-form">
+            <label for="email">Seu e-mail:</label>
+            <div class="input-group">
+              <input type="email" id="email" placeholder="Digite seu e-mail" />
+              <button type="submit">Inscrever-se</button>
+            </div>
+          </form>
         </div>
-
-        <div class="hero__bg">
-          <img
-            src="./images/Capa_alternativa_1 (1).jpeg"
-            alt="Imagem de fundo"
-            aria-hidden="true"
-            width="1920"
-            height="564"
-            decoding="async"
-          />
-        </div>
-      </section>
-        <section id="sobre" class="dados_container">
-          <!-- Início Dados Institucionais -->
-          <section class="sub_dados-institucionais">
-            <div class="sub-introductions">
-              <h2 class="titulos principal-title">Dados Institucionais</h2>
-              <p class="descriptions-cards descriptions-data">
-                Conheça nossa missão, visão e valores, e saiba como sua empresa
-                pode se tornar parceira do COMQ.
-              </p>
-            </div>
-            <div class="container_card">
-              <div class="container_card-infos">
-                <img
-                  src="./images/Overlay-missao.png"
-                  alt="Ícone de missão"
-                  class="image"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h3 class="titulos secundario-title">Missão</h3>
-                <p class="descriptions-cards">
-                  Conectar jovens e empreendedores do bairro Mário Quintana a
-                  oportunidades de desenvolvimento pessoal e profissional,
-                  promovendo a transformação social através da educação e do
-                  trabalho.
-                </p>
-              </div>
-              <div class="container_card-infos">
-                <img
-                  src="./images/Overlay-visao.png"
-                  alt="Ícone de visão"
-                  class="image"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h3 class="titulos secundario-title">Visão</h3>
-                <p class="descriptions-cards">
-                  Ser reconhecido como um centro de referência em geração de
-                  oportunidades, contribuindo para a redução das desigualdades
-                  sociais e o desenvolvimento de renda da comunidade.
-                </p>
-              </div>
-              <div class="container_card-infos">
-                <img
-                  src="./images/Overlay-valores.png"
-                  alt="Ícone de valores"
-                  class="image"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <h3 class="titulos secundario-title">Valores</h3>
-                <ul class="descriptions-cards lista">
-                  <li>Compromisso com a comunidade</li>
-                  <li>Compromisso com a comunidade</li>
-                  <li>Inclusão e diversidade</li>
-                  <li>Inovação e criatividade</li>
-                  <li>Colaboração e trabalho em rede</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <!-- Fim Dados Institucionais -->
-
-          <!-- Início Parceiros -->
-          <section id="parceiros" class="container_parceiros">
-            <h2 class="titulos parceiros-titulos">Parceiros</h2>
-            <div class="container_parceiros-cards">
-              <div class="cards-images">
-                <img src="./images/logo-woman.png" alt="" />
-              </div>
-              <div class="cards-images">
-                <img src="./images/logo-despertar.png" alt="" />
-              </div>
-              <div class="cards-images">
-                <img src="./images/mulheres-convergencia.png" alt="" />
-              </div>
-              <div class="cards-images">
-                <img src="./images/sabao-tingua.png" alt="" />
-              </div>
-              <div class="cards-images">
-                <img src="./images/projeto-social.png" alt="" />
-              </div>
-              <div class="cards-images">
-                <img src="./images/solo.png" alt="" />
-              </div>
-            </div>
-          </section>
-
-          <!-- Início Seja um parceiro -->
-          <section id="voluntario" class="partnership">
-            <div class="partnership__info">
-              <div class="partnership__header">
-                <img src="./images/SVG.png" alt="Ícone de Ilustração" />
-                <h2 class="partnership__title">Seja um Parceiro</h2>
-              </div>
-              <p class="partnership__description">
-                Sua empresa pode fazer parte dessa transformação social. Ao se
-                tornar parceira do COMQ, você contribui diretamente para o
-                desenvolvimento da comunidade e ganha visibilidade como uma
-                organização socialmente responsável.
-              </p>
-              <ul class="partnership__benefits">
-                <li class="partnership__benefit">
-                  <img
-                    src="./images/first-icon.png"
-                    alt="Ilustração primeiro ícone"
-                  />
-                  Ofereça vagas de emprego ou estágio para jovens do bairro.
-                </li>
-                <li class="partnership__benefit">
-                  <img
-                    src="./images/second-icon.png"
-                    alt="Ilustração segundo ícone"
-                  />
-                  Patrocine eventos, workshops ou cursos de capacitação.
-                </li>
-                <li class="partnership__benefit">
-                  <img
-                    src="./images/three-icon.png"
-                    alt="Ilustração terceiro ícone"
-                  />
-                  Disponibilize profissionais para mentorias e palestras.
-                </li>
-              </ul>
-              <a
-                href="https://wa.me/5551984386201"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="partnership__cta"
-                >Quero ser parceiro</a
-              >
-            </div>
-
-            <div class="partnership__details">
-              <div class="partnership__header">
-                <img src="./images/SVG.png" alt="Ícone de Ilustração" />
-                <h2 class="partnership__title">Seja um Voluntário</h2>
-              </div>
-              <div class="card_description">
-                <p class="partnership__description">
-                  Quer transformar vidas com um pequeno gesto? Torne-se
-                  voluntário e faça parte de um projeto que impacta diretamente
-                  a comunidade. Sua ajuda faz toda a diferença junte-se a nós e
-                  seja a mudança que você quer ver no mundo!
-                </p>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScJdvSavlrLVEg4owRK8hGunAH886zovvgiHbrnvE6mGTMuvA/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="partnership__cta"
-                  >Quero ser um voluntário</a
-                >
-              </div>
-              <h3 class="partnership__subtitle">Contato</h3>
-              <span class="partnership__contact">
-                <i class="fas fa-envelope"></i>
-                <a
-                  href="mailto:Comq.projeto@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Comq.projeto@gmail.com</a
-                >
-              </span>
-              <a
-                href="https://wa.me/555189073820"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="partnership__contact"
-              >
-                <i class="fab fa-whatsapp"></i>
-                +55 51 8907-3820</a
-              >
-            </div>
-          </section>
-          <!-- Fim Seja um parceiro -->
-        </section>
-
-        <section id="grupodetrabalho" class="partners-section">
-            <h2 class="section-title">Entre na nossa comunidade!</h2>
-            <p class="section-subtitle">
-              Conheça as pessoas que crescem conosco
-            </p>
-
-            <div class="partners-grid">
-              <div class="partner-card">
-                <div class="partner-image">
-                  <img
-                    src="./images/jovens.png"
-                    alt="Rithiele Silva "
-                    loading="lazy"
-                  />
-                </div>
-                <div class="partner-info">
-                  <h1 class="partner-name">Rithiele Silva</h1>
-                  <p class="partner-title">
-                    Curso Técnico de Enfermagem e<br />Jovem Aprendiz no SENAC
-                    RS
-                  </p>
-                  <p class="partner-description">
-                    Desafios superados pelos grupos do COMQ e conquistado curso
-                    de enfermagem gratuita.
-                  </p>
-                  <a href="https://chat.whatsapp.com/IEoF66GNAYq1VtF02pPiy5" class="partner-button">
-                    <strong>Entrar no grupo de jovens</strong>
-                  </a>
-                </div>
-              </div>
-              <div class="partner-card secondary">
-                <div class="partner-image">
-                  <img
-                    src="./images/empreendedores.png"
-                    alt="Caren Michele"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="partner-info">
-                  <h3 class="partner-name">Caren Michele</h3>
-                  <h5 class="partner-title">
-                    Especialista de Vendas,<br />
-                    CEO da Beutifiul Hair
-                  </h5>
-                  <h5 class="partner-description">
-                    Assisto antes para empreendedoras todo nós no encontro das
-                    Empreendedoras do COMQ!
-                  </h5>
-                  <a href="https://chat.whatsapp.com/B6ZCV0jxCsY07b8X8Rkf3N" class="partner-button"
-                    ><strong> Entrar no grupo de Empreendedoras </strong></a
-                  >
-                </div>
-              </div>
-            </div>
-        </section>
-
-        <section id="historia" class="history">
-          <div class="sub-introductions">
-            <h2 class="titulos principal-title">Nossa história</h2>
-            <p class="descriptions-cards descriptions-data">
-              Conheça os primcipais marcos na trajetória da COMQ <br />
-              e como temos impactado nossa comunidade
-            </p>
-          </div>
-
-          <div class="timeline">
-            <ul>
-              <li>
-                <div class="cardContent">
-                  <img
-                    class="cardImg"
-                    src="./images/Lançamento_do_comq_alternativa_1.jpeg"
-                    alt="Imagem de fundo"
-                    aria-hidden="true"
-                    height="12rem"
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <h4>Agosto 2024</h4>
-                  <h3>Lançamento do COMQ</h3>
-                  <p>
-                    Lançamento oficial do Centro de Oportunidades do MQ (COMQ) com o objetivo de conectar jovens a oportunidades
-                    de emprego.
-                  </p>
-                </div>
-                <div class="point"></div>
-              </li>
-
-              <li>
-                <div class="cardContent">
-                  <img
-                    class="cardImg"
-                    src="./images/Parceria_senac_alternativa_2.jpeg"
-                    alt="Imagem de fundo"
-                    aria-hidden="true"
-                    height="12rem"
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                  />
-
-                  <h4>Setembro 2024</h4>
-                  <h3>Parceria com SENAC</h3>
-                  <p>
-                    Estabelecimento de parceria estratégica com o SENAC para
-                    oferecer cursos profissionalizantes gratuitos para jovens do
-                    bairro.
-                  </p>
-                </div>
-                <div class="point"></div>
-              </li>
-
-              <li>
-                <div class="cardContent">
-                  <img
-                    class="cardImg"
-                    src="./images/Evento_empreendedoras_alternativa_1.jpeg"
-                    alt="Imagem de fundo"
-                    aria-hidden="true"
-                    height="12rem"
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <h4>Novembro 2024</h4>
-                  <h3>Evento Online para Empreendedoras</h3>
-                  <p>
-                    Primeiro grande evento virtual para capacitação de mulheres empreendedoras da comunidade que acabou virando um evento mensal!
-                  </p>
-                </div>
-                <div class="point"></div>
-              </li>
-
-              <li>
-                <div class="cardContent">
-                  <img
-                    class="cardImg"
-                    src="./images/Expofavela_alternativa_1.jpeg"
-                    alt="Imagem de fundo"
-                    aria-hidden="true"
-                    height="12rem"
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <h4>Novembro 2024</h4>
-                  <h3>Participação na Expofavela RS</h3>
-                  <p>
-                    COMQ marca presença na Expofavela, apresentando projetos e conectando empreendedores locais a novas oportunidades de mercado. O COMQ ficou entre os top 15 projetos selecionados!
-                  </p>
-                </div>
-                <div class="point"></div>
-              </li>
-
-              <li>
-                <div class="cardContent">
-                  <img
-                    class="cardImg"
-                    src="./images/aniversario1ano.jpeg"
-                    alt="Imagem de fundo"
-                    aria-hidden="true"
-                    height="12rem"
-                    width="100%"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <h4>Agosto 2025</h4>
-                  <h3>Aniversário de 1 ano do COMQ</h3>
-                  <p>
-                    Celebramos nosso primeiro ano de atuação com muita gratidão, conquistas e reconhecimento. Alguns parceiros foram premiados por sua contribuição nessa caminhada. Seguimos juntos construindo oportunidades no Mário Quintana!
-                  </p>
-                </div>
-                <div class="point"></div>
-              </li>
-            </ul>
-          </div>
-        </section>
-    </main>
-
-   <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-top">
-            <div class="footer-section">
-                <h2 class="footer-heading">COMQ</h2>
-                <p class="footer-text">
-                    Centro de Oportunidades do MQ - Transformando vidas através de oportunidades desde 2024.
-                </p>
-            <div class="social-icons">
-              <a href="https://www.instagram.com/comq.projeto/" aria-label="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="https://www.linkedin.com/company/comq-projeto/" aria-label="LinkedIn"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-
-          <!-- Links Rápidos -->
-          <div class="footer-section">
-            <h3 class="footer-subheading">Links Rápidos</h3>
-            <ul class="footer-list">
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#historia">História</a></li>
-              <li><a href="#grupodetrabalho">Comunidade</a></li>
-              <li><a href="#voluntario">Voluntários</a></li>
-              <li><a href="#parceiros">Parceiros</a></li>
-            </ul>
-          </div>
-
-          <!-- Contato -->
-          <div class="footer-section">
-            <h3 class="footer-subheading">Contato</h3>
-            <address class="footer-address">
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt contact-icon"></i>
-                <span
-                  >Bairro Mário Quintana, Porto Alegre/RS</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-envelope contact-icon"></i>
-                <a href="mailto:centato@comq.org.br">comq.projeto@gmail.com</a>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone-alt contact-icon"></i>
-                <a href="tel:+555189073820">+55 51 8907-3820</a>
-              </div>
-            </address>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="footer-section">
-            <h3 class="footer-subheading">Newsletter</h3>
-            <p class="footer-text">
-              Receba novidades sobre oportunidades, eventos e histórias de
-              sucesso.
-            </p>
-            <form class="newsletter-form">
-              <label for="email">Seu e-mail:</label>
-              <div class="input-group">
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Digite seu e-mail"/>
-                <button type="submit">Inscrever-se</button>
-              </div>
-            </form>
-          </div>
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
@@ -533,6 +453,7 @@
           </div>
         </div>
       </div>
-   </footer>
-  </body>
+  </footer>
+</body>
+
 </html>

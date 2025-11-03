@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /e/Projetos/COMQ/Projetos/site_comq log --oneline -10)",
+      "Bash(git -C /e/Projetos/COMQ/Projetos/site_comq remote -v)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
