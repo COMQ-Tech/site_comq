@@ -1,459 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>COMQ!</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./images/logo-comq.png" />
-
-  <!-- FONTES  -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Nunito:wght@400;700&display=swap"
-    rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- JS -->
-  <script src="js/app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMQ — Centro de Oportunidades do Bairro Mário Quintana</title>
+<meta name="description" content="O COMQ conecta jovens e empreendedores do bairro Mário Quintana a oportunidades de emprego, capacitação, geração de renda e desenvolvimento comunitário.">
+<meta name="theme-color" content="#28535A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--petrol:#28535A;--pink:#C00D7B;--orange:#FA7E34;--yellow:#FFC645;--ink:#203238;--muted:#607176;--paper:#fbfaf8;--white:#fff;--line:#e8eceb;--shadow:0 18px 50px rgba(24,54,59,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:'Nunito',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}img{max-width:100%;display:block}a{color:inherit}button,a{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:3px}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;padding:12px;z-index:999}.skip-link:focus{left:8px}.container{width:min(1160px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(40,83,90,.10)}.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{width:150px;height:auto;max-height:62px;object-fit:contain}.nav{display:flex;align-items:center;gap:26px}.nav a{text-decoration:none;font-size:.94rem;font-weight:800;color:#385258}.nav a:hover{color:var(--orange)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 23px;border-radius:999px;text-decoration:none;font-weight:900;font-family:'Barlow Condensed',sans-serif;letter-spacing:.04em;text-transform:uppercase;transition:.2s;border:0;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--orange);color:#fff;box-shadow:0 8px 20px rgba(250,126,52,.20)}.btn-light{background:#fff;color:var(--petrol)}.btn-yellow{background:var(--yellow);color:var(--ink)}.menu-toggle{display:none;background:none;border:0;color:var(--petrol);font-size:1.7rem}.hero{min-height:590px;display:flex;align-items:center;position:relative;isolation:isolate;color:#fff;background:var(--petrol);overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,49,53,.90),rgba(20,49,53,.58) 58%,rgba(20,49,53,.25));z-index:-1}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero-content{max-width:720px;padding:90px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--yellow)}h1,h2,h3,.display{font-family:'Barlow Condensed',sans-serif;line-height:1.06;margin:0 0 18px}h1{font-size:clamp(3rem,7vw,5.5rem);max-width:750px}h1 span,.accent{color:var(--yellow)}h2{font-size:clamp(2.2rem,4vw,3.2rem);color:var(--petrol)}h3{font-size:1.55rem;color:var(--petrol)}p{margin:0 0 18px}.hero p{font-size:1.12rem;max-width:650px;color:rgba(255,255,255,.92)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.section{padding:88px 0}.section-intro{max-width:720px;margin-bottom:38px}.section-intro p{color:var(--muted);font-size:1.05rem}.kicker{color:var(--orange);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}.card p{color:var(--muted);margin-bottom:0}.card-number{font-family:'Barlow Condensed',sans-serif;color:var(--orange);font-size:2.4rem;font-weight:700}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}.about-copy{font-size:1.1rem;color:var(--muted)}.pillars{display:grid;gap:14px}.pillar{padding:20px 22px;background:#fff;border-left:4px solid var(--orange);border-radius:0 14px 14px 0;box-shadow:var(--shadow)}.pillar h3{margin-bottom:6px}.pillar p{margin:0;color:var(--muted)}.dark-section{background:var(--petrol);color:#fff}.dark-section h2,.dark-section h3{color:#fff}.dark-section .section-intro p{color:rgba(255,255,255,.78)}.accel{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center}.accel-mark{border:1px solid rgba(255,255,255,.24);border-radius:24px;padding:36px;text-align:center;background:rgba(255,255,255,.06)}.accel-mark strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;color:var(--yellow)}.accel-mark span{display:block;margin-top:12px;font-size:.9rem;color:rgba(255,255,255,.8)}.accel-copy p{color:rgba(255,255,255,.86)}.text-link{color:var(--yellow);font-weight:900;text-underline-offset:4px}.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:center}.logo-tile{height:130px;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff;border:1px solid var(--line);border-radius:16px}.logo-tile img{max-height:82px;max-width:100%;object-fit:contain;filter:grayscale(1);transition:filter .2s}.logo-tile:hover img,.logo-tile:focus-within img{filter:none}.split{display:grid;grid-template-columns:1fr 1fr;min-height:390px}.split-panel{padding:70px max(40px,calc((100vw - 1160px)/2));background:#fff}.split-panel.dark{background:var(--petrol);color:#fff;padding-left:50px;padding-right:max(40px,calc((100vw - 1160px)/2))}.split-panel.dark h2{color:#fff}.split-panel.dark p{color:rgba(255,255,255,.82)}.benefits{padding:0;list-style:none;display:grid;gap:13px;margin:24px 0}.benefits li:before{content:"•";color:var(--orange);font-size:1.4rem;font-weight:900;margin-right:10px}.volunteer-band{background:#f5eee8}.volunteer-inner{display:flex;align-items:center;justify-content:space-between;gap:32px}.volunteer-inner>div{max-width:680px}.community-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.community-card{padding:34px;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}.community-card:nth-child(2){border-top:5px solid var(--pink)}.community-card:nth-child(1){border-top:5px solid var(--yellow)}.community-card p{color:var(--muted)}.newsletter{background:#f1f4f2}.newsletter-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter-inner>div{max-width:620px}.newsletter-note{font-size:.9rem;color:var(--muted)}.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.8);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.18);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.7)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}.page-hero{background:var(--petrol);color:#fff;padding:85px 0}.page-hero h1{font-size:clamp(2.8rem,6vw,4.5rem)}.page-hero p{max-width:700px;color:rgba(255,255,255,.85);font-size:1.08rem}.document-list{display:grid;gap:16px;max-width:850px}.document-item{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:16px}.document-item h3{font-size:1.35rem;margin:0}.status{white-space:nowrap;background:#fff4dc;color:#765400;padding:6px 12px;border-radius:999px;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.construction{padding:30px;background:#fff7ed;border:1px solid #f6d6bd;border-radius:18px;max-width:700px;color:#65452f}.construction strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;margin-bottom:6px}.mobile-menu{display:none}
+@media(max-width:900px){.nav{gap:14px}.nav a{font-size:.86rem}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.accel{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:55px 30px}}
+@media(max-width:680px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner,.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+</style>
 </head>
-
-<body>
-  <!-- HEADER (CABEÇALHO) -->
-  <header class="header">
-    <div class="header__container">
-      <img src="./images/logo-comq.png" alt="COMQ" class="header__logo" />
-
-      <!-- BOTÃO MENU HAMBÚRGUER -->
-      <button class="menu-toggle" aria-label="Abrir menu">
-        <span class="menu-icon">&#9776;</span>
-      </button>
-
-      <!-- NAVEGAÇÃO -->
-      <nav>
-        <ul class="navh">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#historia">História</a></li>
-          <li><a href="#grupodetrabalho">Comunidade</a></li>
-          <li><a href="#voluntario">Voluntários</a></li>
-          <li><a href="#parceiros">Parceiros</a></li>
-        </ul>
-      </nav>
-
-      <!-- BOTÃO DE CONTATO
-        <button class="BTN1">Contato</button>
-         -->
-    </div>
-  </header>
-
-  <!-- OVERLAY DO MENU MOBILE -->
-  <div class="menu-overlay"></div>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero__container container">
-        <h1>Transformando vidas através de oportunidades</h1>
-        <p>
-          O Centro de Oportunidades do MQ (COMQ) é uma iniciativa
-          que conecta jovens e empreendedores do bairro a oportunidades de
-          emprego, capacitação e desenvolvimento. Acreditamos no potencial
-          transformador da comunidade quando recebe as ferramentas certas.
-        </p>
-        <div class="hero__buttons">
-          <a href="#historia" class="hero__buttons-accent">Conheça nossos projetos</a>
-          <a href="#voluntario" class="hero__buttons-white">Seja um parceiro</a>
-        </div>
-      </div>
-
-      <div class="hero__bg">
-        <img src="./images/Capa_alternativa_1 (1).jpeg" alt="Imagem de fundo" aria-hidden="true" width="1920"
-          height="564" decoding="async" />
-      </div>
-    </section>
-    <section id="sobre" class="dados_container">
-      <!-- Início Dados Institucionais -->
-      <section class="sub_dados-institucionais">
-        <div class="sub-introductions">
-          <h2 class="titulos principal-title">Dados Institucionais</h2>
-          <p class="descriptions-cards descriptions-data">
-            Conheça nossa missão, visão e valores, e saiba como sua empresa
-            pode se tornar parceira do COMQ.
-          </p>
-        </div>
-        <div class="container_card">
-          <div class="container_card-infos">
-            <img src="./images/Overlay-missao.png" alt="Ícone de missão" class="image" loading="lazy"
-              decoding="async" />
-            <h3 class="titulos secundario-title">Missão</h3>
-            <p class="descriptions-cards">
-              Conectar jovens e empreendedores do bairro Mário Quintana a
-              oportunidades de desenvolvimento pessoal e profissional,
-              promovendo a transformação social através da educação e do
-              trabalho.
-            </p>
-          </div>
-          <div class="container_card-infos">
-            <img src="./images/Overlay-visao.png" alt="Ícone de visão" class="image" loading="lazy" decoding="async" />
-            <h3 class="titulos secundario-title">Visão</h3>
-            <p class="descriptions-cards">
-              Ser reconhecido como um centro de referência em geração de
-              oportunidades, contribuindo para a redução das desigualdades
-              sociais e o desenvolvimento de renda da comunidade.
-            </p>
-          </div>
-          <div class="container_card-infos">
-            <img src="./images/Overlay-valores.png" alt="Ícone de valores" class="image" loading="lazy"
-              decoding="async" />
-            <h3 class="titulos secundario-title">Valores</h3>
-            <ul class="descriptions-cards lista">
-              <li>Compromisso com a comunidade</li>
-              <li>Compromisso com a comunidade</li>
-              <li>Inclusão e diversidade</li>
-              <li>Inovação e criatividade</li>
-              <li>Colaboração e trabalho em rede</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- Fim Dados Institucionais -->
-
-      <!-- Início Parceiros -->
-      <section id="parceiros" class="container_parceiros">
-        <div class="sub-introductions">
-          <h2 class="titulos principal-title">Quem caminha com o COMQ</h2>
-          <p class="descriptions-cards descriptions-data">
-            Iniciativas, projetos e organizações que acreditam no poder das conexões para transformar realidades.
-          </p>
-        </div>
-        <div class="container_parceiros-cards">
-          <div class="cards-images" data-partner="woman">
-            <img src="./images/logo-woman.png" alt="Woman Logo" />
-          </div>
-          <div class="cards-images" data-partner="despertar">
-            <img src="./images/logo-despertar.png" alt="Despertar Logo" />
-          </div>
-          <div class="cards-images" data-partner="convergencia">
-            <img src="./images/mulheres-convergencia.png" alt="Mulheres Convergência Logo" />
-          </div>
-          <div class="cards-images" data-partner="tingua">
-            <img src="./images/sabao-tingua.png" alt="Sabão Tinguá Logo" />
-          </div>
-          <div class="cards-images" data-partner="social">
-            <img src="./images/projeto-social.png" alt="Projeto Social Logo" />
-          </div>
-          <div class="cards-images" data-partner="solo">
-            <img src="./images/solo.png" alt="Solo Logo" />
-          </div>
-        </div>
-      </section>
-      <!-- Fim Parceiros -->
-
-    </section>
-    <!-- Fim Dados Institucionais Container -->
-
-    <!-- Início Seja um parceiro -->
-    <section id="voluntario" class="partnership">
-      <div class="partnership__info">
-        <div class="partnership__header">
-          <img src="./images/SVG.png" alt="Ícone de Ilustração" />
-          <h2 class="partnership__title">Seja um Parceiro</h2>
-        </div>
-        <p class="partnership__description">
-          Sua empresa pode fazer parte dessa transformação social. Ao se
-          tornar parceira do COMQ, você contribui diretamente para o
-          desenvolvimento da comunidade e ganha visibilidade como uma
-          organização socialmente responsável.
-        </p>
-        <ul class="partnership__benefits">
-          <li class="partnership__benefit">
-            <img src="./images/first-icon.png" alt="Ilustração primeiro ícone" />
-            Ofereça vagas de emprego ou estágio para jovens do bairro.
-          </li>
-          <li class="partnership__benefit">
-            <img src="./images/second-icon.png" alt="Ilustração segundo ícone" />
-            Patrocine eventos, workshops ou cursos de capacitação.
-          </li>
-          <li class="partnership__benefit">
-            <img src="./images/three-icon.png" alt="Ilustração terceiro ícone" />
-            Disponibilize profissionais para mentorias e palestras.
-          </li>
-        </ul>
-        <a href="https://wa.me/5551984386201" target="_blank" rel="noopener noreferrer" class="partnership__cta">Quero
-          ser parceiro</a>
-      </div>
-
-      <div class="partnership__details">
-        <div class="partnership__header">
-          <img src="./images/SVG.png" alt="Ícone de Ilustração" />
-          <h2 class="partnership__title">Seja um Voluntário</h2>
-        </div>
-        <div class="card_description">
-          <p class="partnership__description">
-            Quer transformar vidas com um pequeno gesto? Torne-se
-            voluntário e faça parte de um projeto que impacta diretamente
-            a comunidade. Sua ajuda faz toda a diferença junte-se a nós e
-            seja a mudança que você quer ver no mundo!
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJdvSavlrLVEg4owRK8hGunAH886zovvgiHbrnvE6mGTMuvA/viewform"
-            target="_blank" rel="noopener noreferrer" class="partnership__cta">Quero ser um voluntário</a>
-        </div>
-        <h3 class="partnership__subtitle">Contato</h3>
-        <span class="partnership__contact">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:Comq.projeto@gmail.com" target="_blank" rel="noopener noreferrer">Comq.projeto@gmail.com</a>
-        </span>
-        <a href="https://wa.me/555189073820" target="_blank" rel="noopener noreferrer" class="partnership__contact">
-          <i class="fab fa-whatsapp"></i>
-          +55 51 8907-3820</a>
-      </div>
-    </section>
-    <!-- Fim Seja um parceiro -->
-
-    <section id="grupodetrabalho" class="partners-section">
-      <h2 class="section-title">Entre na nossa comunidade!</h2>
-      <p class="section-subtitle">
-        Conheça as pessoas que crescem conosco
-      </p>
-
-      <div class="partners-grid">
-        <div class="partner-card">
-          <div class="partner-image">
-            <img src="./images/jovens.png" alt="Rithiele Silva " loading="lazy" />
-          </div>
-          <div class="partner-info">
-            <h1 class="partner-name">Rithiele Silva</h1>
-            <p class="partner-title">
-              Curso Técnico de Enfermagem e<br />Jovem Aprendiz no SENAC
-              RS
-            </p>
-            <p class="partner-description">
-              Desafios superados pelos grupos do COMQ e conquistado curso
-              de enfermagem gratuita.
-            </p>
-            <a href="https://chat.whatsapp.com/IEoF66GNAYq1VtF02pPiy5" class="partner-button">
-              <strong>Entrar no grupo de jovens</strong>
-            </a>
-          </div>
-        </div>
-        <div class="partner-card secondary">
-          <div class="partner-image">
-            <img src="./images/empreendedores.png" alt="Caren Michele" loading="lazy" />
-          </div>
-          <div class="partner-info">
-            <h3 class="partner-name">Caren Michele</h3>
-            <h5 class="partner-title">
-              Especialista de Vendas,<br />
-              CEO da Beutifiul Hair
-            </h5>
-            <h5 class="partner-description">
-              Assisto antes para empreendedoras todo nós no encontro das
-              Empreendedoras do COMQ!
-            </h5>
-            <a href="https://chat.whatsapp.com/B6ZCV0jxCsY07b8X8Rkf3N" class="partner-button"><strong> Entrar no grupo
-                de Empreendedoras </strong></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="historia" class="history">
-      <div class="sub-introductions">
-        <h2 class="titulos principal-title">Nossa história</h2>
-        <p class="descriptions-cards descriptions-data">
-          Conheça os principais marcos na trajetória da COMQ <br />
-          e como temos impactado nossa comunidade
-        </p>
-      </div>
-
-      <div class="timeline">
-        <ul>
-          <li>
-            <div class="cardContent">
-              <img class="cardImg" src="./images/Lançamento_do_comq_alternativa_1.jpeg" alt="Imagem de fundo"
-                aria-hidden="true" height="12rem" width="100%" loading="lazy" decoding="async" />
-              <h4>Agosto 2024</h4>
-              <h3>Lançamento do COMQ</h3>
-              <p>
-                Lançamento oficial do Centro de Oportunidades do MQ (COMQ) com o objetivo de conectar jovens a
-                oportunidades
-                de emprego.
-              </p>
-            </div>
-            <div class="point"></div>
-          </li>
-
-          <li>
-            <div class="cardContent">
-              <img class="cardImg" src="./images/Parceria_senac_alternativa_2.jpeg" alt="Imagem de fundo"
-                aria-hidden="true" height="12rem" width="100%" loading="lazy" decoding="async" />
-
-              <h4>Setembro 2024</h4>
-              <h3>Parceria com SENAC</h3>
-              <p>
-                Estabelecimento de parceria estratégica com o SENAC para
-                oferecer cursos profissionalizantes gratuitos para jovens do
-                bairro.
-              </p>
-            </div>
-            <div class="point"></div>
-          </li>
-
-          <li>
-            <div class="cardContent">
-              <img class="cardImg" src="./images/Evento_empreendedoras_alternativa_1.jpeg" alt="Imagem de fundo"
-                aria-hidden="true" height="12rem" width="100%" loading="lazy" decoding="async" />
-              <h4>Novembro 2024</h4>
-              <h3>Evento Online para Empreendedoras</h3>
-              <p>
-                Primeiro grande evento virtual para capacitação de mulheres empreendedoras da comunidade que acabou
-                virando um evento mensal!
-              </p>
-            </div>
-            <div class="point"></div>
-          </li>
-
-          <li>
-            <div class="cardContent">
-              <img class="cardImg" src="./images/Expofavela_alternativa_1.jpeg" alt="Imagem de fundo" aria-hidden="true"
-                height="12rem" width="100%" loading="lazy" decoding="async" />
-              <h4>Novembro 2024</h4>
-              <h3>Participação na Expofavela RS</h3>
-              <p>
-                COMQ marca presença na Expofavela, apresentando projetos e conectando empreendedores locais a novas
-                oportunidades de mercado. O COMQ ficou entre os top 15 projetos selecionados!
-              </p>
-            </div>
-            <div class="point"></div>
-          </li>
-
-          <li>
-            <div class="cardContent">
-              <img class="cardImg" src="./images/aniversario1ano.jpeg" alt="Imagem de fundo" aria-hidden="true"
-                height="12rem" width="100%" loading="lazy" decoding="async" />
-              <h4>Agosto 2025</h4>
-              <h3>Aniversário de 1 ano do COMQ</h3>
-              <p>
-                Celebramos nosso primeiro ano de atuação com muita gratidão, conquistas e reconhecimento. Alguns
-                parceiros foram premiados por sua contribuição nessa caminhada. Seguimos juntos construindo
-                oportunidades no Mário Quintana!
-              </p>
-            </div>
-            <div class="point"></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal dos Parceiros -->
-  <div id="partner-modal" class="partner-modal">
-    <div class="partner-modal-content">
-      <button class="partner-modal-close" aria-label="Fechar modal">&times;</button>
-      <div class="partner-modal-header">
-        <img id="modal-partner-logo" src="" alt="Logo do parceiro" class="modal-partner-logo" />
-        <h3 id="modal-partner-name"></h3>
-      </div>
-      <div class="partner-modal-body">
-        <p id="modal-partner-description"></p>
-        <div class="partner-modal-info">
-          <h4>Informações</h4>
-          <ul id="modal-partner-details"></ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-top">
-        <div class="footer-section">
-          <h2 class="footer-heading">COMQ</h2>
-          <p class="footer-text">
-            Centro de Oportunidades do MQ - Transformando vidas através de oportunidades desde 2024.
-          </p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/comq.projeto/" aria-label="Instagram"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/comq-projeto/" aria-label="LinkedIn"><i
-                class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <!-- Links Rápidos -->
-        <div class="footer-section">
-          <h3 class="footer-subheading">Links Rápidos</h3>
-          <ul class="footer-list">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#historia">História</a></li>
-            <li><a href="#grupodetrabalho">Comunidade</a></li>
-            <li><a href="#voluntario">Voluntários</a></li>
-            <li><a href="#parceiros">Parceiros</a></li>
-          </ul>
-        </div>
-
-        <!-- Contato -->
-        <div class="footer-section">
-          <h3 class="footer-subheading">Contato</h3>
-          <address class="footer-address">
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt contact-icon"></i>
-              <span>Bairro Mário Quintana, Porto Alegre/RS</span>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope contact-icon"></i>
-              <a href="mailto:centato@comq.org.br">comq.projeto@gmail.com</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-phone-alt contact-icon"></i>
-              <a href="tel:+555189073820">+55 51 8907-3820</a>
-            </div>
-          </address>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="footer-section">
-          <h3 class="footer-subheading">Newsletter</h3>
-          <p class="footer-text">
-            Receba novidades sobre oportunidades, eventos e histórias de
-            sucesso.
-          </p>
-          <form class="newsletter-form">
-            <label for="email">Seu e-mail:</label>
-            <div class="input-group">
-              <input type="email" id="email" placeholder="Digite seu e-mail" />
-              <button type="submit">Inscrever-se</button>
-            </div>
-          </form>
-        </div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-          <div class="copyright">
-            &copy; 2025 Centro de Oportunidades do MQ. Todos os
-            direitos reservados.
-          </div>
-          <div class="footer-links">
-            <a href="#">Política da Privacidade</a>
-            <a href="#">Termos de Uso</a>
-            <a href="#">Transparência</a>
-          </div>
-        </div>
-      </div>
-  </footer>
-</body>
-
-</html>
+<body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="header"><div class="container header-inner">
+<a href="index.html" aria-label="Página inicial do COMQ"><img class="logo" src="./images/logo-comq.png" alt="COMQ — Centro de Oportunidades do Bairro Mário Quintana"></a>
+<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+<nav class="nav" id="site-nav" aria-label="Navegação principal">
+<a href="index.html#sobre">Sobre</a><a href="index.html#atuacao">Atuação</a><a href="index.html#comunidade">Comunidade</a><a href="index.html#parceiros">Parceiros</a><a href="index.html#contato">Contato</a>
+</nav><a class="btn btn-primary" href="apoie.html">Apoie <span aria-hidden="true">→</span></a>
+</div></header><main id="conteudo">
+<section class="hero">
+<img class="hero-bg" src="./images/Capa_alternativa_1%20(1).jpeg" alt="" aria-hidden="true">
+<div class="container"><div class="hero-content"><div class="eyebrow">Centro de Oportunidades do Bairro Mário Quintana</div>
+<h1>Transformando vidas <span>através de oportunidades.</span></h1>
+<p>O COMQ — Centro de Oportunidades do Bairro Mário Quintana conecta jovens e empreendedores a oportunidades de emprego, capacitação, geração de renda e desenvolvimento comunitário. Acreditamos na potência do território e nas oportunidades que podem transformar trajetórias.</p>
+<div class="actions"><a class="btn btn-primary" href="#atuacao">Conheça nossa atuação <span aria-hidden="true">→</span></a><a class="btn btn-light" href="#parceria">Seja um parceiro <span aria-hidden="true">→</span></a></div></div></div>
+</section>
+<section class="section" id="sobre"><div class="container about-grid"><div><div class="kicker">Quem somos</div><h2>Oportunidades na palma da mão da comunidade.</h2><p class="about-copy">O COMQ — Centro de Oportunidades do Bairro Mário Quintana é uma iniciativa comunitária que conecta pessoas, organizações e oportunidades, promovendo o desenvolvimento da juventude, o empreendedorismo feminino e o fortalecimento comunitário.</p></div>
+<div class="pillars"><article class="pillar"><h3>Missão</h3><p>Conectar jovens e empreendedores do bairro Mário Quintana a oportunidades de desenvolvimento pessoal e profissional, promovendo transformação social por meio da educação e do trabalho.</p></article><article class="pillar"><h3>Visão</h3><p>Ser reconhecido como uma referência em geração de oportunidades, contribuindo para a redução das desigualdades sociais e o desenvolvimento do território.</p></article><article class="pillar"><h3>Valores</h3><p>Compromisso com a comunidade, protagonismo, inclusão e diversidade, inovação, colaboração e desenvolvimento territorial.</p></article></div></div></section>
+<section class="section" id="atuacao" style="background:#f1f4f2"><div class="container"><div class="section-intro"><div class="kicker">Nossa atuação</div><h2>Como transformamos oportunidades em desenvolvimento</h2><p>Trabalhamos em três frentes conectadas às necessidades e às potências do território.</p></div>
+<div class="grid-3"><article class="card"><div class="card-number">01</div><h3>Juventude e Empregabilidade</h3><p>Conectamos jovens a oportunidades de emprego, aprendizagem, capacitação e desenvolvimento profissional, aproximando a comunidade do mercado de trabalho.</p></article><article class="card"><div class="card-number">02</div><h3>Empreendedorismo Feminino e Geração de Renda</h3><p>Fortalecemos mulheres empreendedoras por meio de conexões, capacitações, oportunidades de comercialização e desenvolvimento de negócios.</p></article><article class="card"><div class="card-number">03</div><h3>Desenvolvimento Comunitário e Participação Cidadã</h3><p>Promovemos mobilização, articulação territorial, participação cidadã e fortalecimento das conexões comunitárias.</p></article></div></div></section>
+<section class="section dark-section"><div class="container accel"><div class="accel-mark"><div class="eyebrow">Desenvolvimento institucional</div><strong>AMPLITUDE<br>PERIFA 2026</strong><span>Instituto Helda Gerdau · Grupo Semente Negócios</span></div><div class="accel-copy"><div class="kicker">Fortalecendo nossa atuação</div><h2>Aprender, conectar e ampliar nosso impacto.</h2><p>O COMQ integra o Amplitude Perifa 2026, iniciativa do Instituto Helda Gerdau, realizada pelo Grupo Semente Negócios. O programa fortalece negócios periféricos de impacto socioambiental por meio de formação, acompanhamento e conexões estratégicas.</p><p>Essa participação representa uma etapa importante no desenvolvimento institucional do COMQ, contribuindo para aprimorar a gestão, fortalecer a sustentabilidade e ampliar nossa capacidade de atuação no território.</p><a class="text-link" href="https://sementenegocios.com.br/amplitude-perifa/" target="_blank" rel="noopener">Conheça o programa →</a></div></div></section>
+<section class="section" id="parceiros"><div class="container"><div class="section-intro"><div class="kicker">Conexões que fortalecem</div><h2>Quem caminha com o COMQ</h2><p>Iniciativas, empresas e organizações que acreditam no potencial das pessoas e na força das oportunidades.</p></div>
+<div class="logos"><div class="logo-tile"><img src="./images/logo-woman.png" alt="Woman"></div><div class="logo-tile"><img src="./images/logo-despertar.png" alt="Despertar"></div><div class="logo-tile"><img src="./images/mulheres-convergencia.png" alt="Mulheres Convergência"></div><div class="logo-tile"><img src="./images/sabao-tingua.png" alt="Sabão Tinguá"></div><div class="logo-tile"><img src="./images/projeto-social.png" alt="Projeto Social"></div><div class="logo-tile"><img src="./images/solo.png" alt="Solo"></div></div></div></section>
+<section class="split" id="parceria"><div class="split-panel"><div class="kicker">Conexões institucionais</div><h2>Seja um parceiro</h2><p>Sua organização pode fazer parte da construção de novas oportunidades no território. Ao estabelecer uma parceria com o COMQ, sua empresa contribui para o desenvolvimento comunitário e fortalece conexões entre pessoas, organizações e oportunidades.</p><ul class="benefits"><li>Ofereça vagas de emprego, estágio e aprendizagem.</li><li>Apoie projetos, eventos e formações.</li><li>Disponibilize profissionais para mentorias e palestras.</li></ul><a class="btn btn-primary" href="https://wa.me/5551984386201?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20uma%20parceria%20com%20o%20COMQ." target="_blank" rel="noopener">Quero ser parceiro →</a></div><div class="split-panel dark"><div class="kicker">Por que caminhar com o COMQ?</div><h2>Parcerias com propósito e conexão territorial.</h2><ul class="benefits"><li>Impacto social direto na comunidade.</li><li>Conexão com talentos locais.</li><li>Fortalecimento da responsabilidade social empresarial.</li><li>Participação em iniciativas comunitárias.</li><li>Construção de relações de longo prazo.</li></ul></div></section>
+<section class="section volunteer-band" id="voluntario"><div class="container volunteer-inner"><div><div class="kicker">Faça parte</div><h2>Conhecimento, tempo e colaboração também transformam.</h2><p>O desenvolvimento de uma comunidade acontece por meio de pessoas que compartilham conhecimentos, experiências e tempo. Seja voluntário do COMQ e contribua com iniciativas que ampliam oportunidades no território.</p></div><a class="btn btn-yellow" href="https://forms.gle/sgCAbVU9Biwkn1iL6" target="_blank" rel="noopener">Quero ser voluntário →</a></div></section>
+<section class="section" id="comunidade"><div class="container"><div class="section-intro"><div class="kicker">Participe</div><h2>Entre na nossa comunidade</h2><p>Oportunidades na palma da mão da comunidade. Encontre a iniciativa que combina com seu momento.</p></div>
+<div class="community-grid"><article class="community-card" id="jovens"><div class="kicker">Juventude e empregabilidade</div><h3>Você está em busca de oportunidades?</h3><p>Se você tem entre 15 e 23 anos e busca oportunidades de emprego, aprendizagem, capacitação e desenvolvimento profissional, faça parte da rede de oportunidades do COMQ.</p><a class="btn btn-primary" href="https://forms.gle/UM5xxJsHh5L2gmez5" target="_blank" rel="noopener">Quero participar →</a></article><article class="community-card" id="empreendedoras"><div class="kicker">Empreendedorismo feminino</div><h3>Quer fortalecer seu negócio?</h3><p>Se você é empreendedora e quer ampliar sua rede de contatos, participar de formações e encontrar novas oportunidades de geração de renda, venha fazer parte.</p><a class="btn btn-primary" href="https://forms.gle/J87rSwAd1KMbTeuY7" target="_blank" rel="noopener">Quero participar →</a></article></div></div></section>
+<section class="section newsletter"><div class="container newsletter-inner"><div><div class="kicker">Novidades do COMQ</div><h2>Fique por dentro das oportunidades.</h2><p>Receba informações sobre projetos, eventos, oportunidades, ações comunitárias e novidades do COMQ.</p><p class="newsletter-note">A inscrição por e-mail será ativada após a configuração de uma plataforma de envio e armazenamento de contatos. Não informe seus dados até essa integração estar disponível.</p></div><a class="btn btn-primary" href="mailto:comq.projeto@gmail.com?subject=Quero%20receber%20novidades%20do%20COMQ">Tenho interesse →</a></div></section>
+</main><footer class="footer" id="contato"><div class="container">
+<div class="footer-grid">
+<div><img class="footer-logo" src="./images/logo-comq.png" alt="COMQ — Centro de Oportunidades do Bairro Mário Quintana"><p>Oportunidades na palma da mão da comunidade.</p><p><a href="https://www.instagram.com/comq.projeto/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/company/comq-projeto/" target="_blank" rel="noopener">LinkedIn</a></p></div>
+<div><h3>Institucional</h3><ul><li><a href="index.html#sobre">Sobre</a></li><li><a href="index.html#atuacao">Nossa atuação</a></li><li><a href="index.html#parceiros">Parceiros</a></li><li><a href="transparencia.html">Transparência</a></li></ul></div>
+<div><h3>Participe</h3><ul><li><a href="index.html#jovens">Jovens</a></li><li><a href="index.html#empreendedoras">Empreendedoras</a></li><li><a href="index.html#voluntario">Seja voluntário</a></li><li><a href="index.html#parceria">Seja parceiro</a></li><li><a href="apoie.html">Apoie</a></li></ul></div>
+<div><h3>Contato</h3><address>Bairro Mário Quintana, Porto Alegre/RS<br><a href="mailto:comq.projeto@gmail.com">comq.projeto@gmail.com</a><br><a href="https://wa.me/5551984386201" target="_blank" rel="noopener">WhatsApp institucional</a></address></div>
+</div><div class="footer-bottom"><span>© 2026 COMQ — Centro de Oportunidades do Bairro Mário Quintana. Todos os direitos reservados.</span><div class="footer-bottom-links"><a href="transparencia.html">Transparência</a><a href="mailto:comq.projeto@gmail.com?subject=Pol%C3%ADtica%20de%20Privacidade">Política de Privacidade</a><a href="mailto:comq.projeto@gmail.com?subject=Termos%20de%20Uso">Termos de Uso</a></div></div>
+</div></footer>
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.nav');
+if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');menuButton.textContent=open?'×':'☰';});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menu');menuButton.textContent='☰';}));}
+</script></body></html>
