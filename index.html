@@ -22,20 +22,17 @@
 
 .pillars{display:grid;gap:14px}.pillar{padding:20px 22px;background:#fff;border-left:4px solid var(--orange);border-radius:0 14px 14px 0;box-shadow:var(--shadow)}.pillar h3{margin-bottom:6px}.pillar p{margin:0;color:var(--muted)}.dark-section{background:var(--petrol);color:#fff}.dark-section h2,.dark-section h3{color:#fff}.dark-section .section-intro p{color:rgba(255,255,255,.78)}.accel{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center}.accel-mark{padding:18px;background:transparent;border:0;text-align:center}.accel-mark strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;color:var(--yellow)}.accel-mark span{display:block;margin-top:12px;font-size:.9rem;color:rgba(255,255,255,.8)}.accel-badge{display:block;width:100%;max-width:620px;height:auto;margin:0 auto;border-radius:18px}.accel-copy p{color:rgba(255,255,255,.86)}.text-link{color:var(--yellow);font-weight:900;text-underline-offset:4px}.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:center}.logo-tile{height:130px;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.logo-tile img{max-height:82px;max-width:100%;object-fit:contain;filter:none;transition:transform .25s ease}.logo-tile:hover img,.logo-tile:focus-within img{transform:scale(1.05)}.split{display:grid;grid-template-columns:1fr 1fr;min-height:390px}.split-panel{padding:70px max(40px,calc((100vw - 1160px)/2));background:#fff}.split-panel.dark{background:var(--petrol);color:#fff;padding-left:50px;padding-right:max(40px,calc((100vw - 1160px)/2))}.split-panel.dark h2{color:#fff}.split-panel.dark p{color:rgba(255,255,255,.82)}.benefits{padding:0;list-style:none;display:grid;gap:13px;margin:24px 0}.benefits li:before{content:"•";color:var(--orange);font-size:1.4rem;font-weight:900;margin-right:10px}
 
-/* Seção Projetos */
-.projects-band{background:#f1f4f2}
-.projects-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:38px}
-.projects-head .section-intro{margin-bottom:0}
-.project-card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
-.project-thumb{position:relative;height:210px;background:var(--petrol);overflow:hidden}
-.project-thumb img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .35s ease}
-.project-card:hover .project-thumb img{transform:scale(1.04)}
-.project-tag{position:absolute;top:14px;left:14px;background:var(--petrol);color:var(--yellow);font-family:'Barlow Condensed',sans-serif;font-size:.95rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
-.project-body{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
-.project-body h3{margin-bottom:8px}
-.project-body p{color:var(--muted);margin-bottom:18px;font-size:.98rem}
-.project-link{margin-top:auto;display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:800;font-size:.92rem;color:var(--petrol)}
-.project-link:hover{color:var(--orange)}
+/* Seção Resultados */
+.results-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+.result-card{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--orange);border-radius:18px;padding:26px 22px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(24,54,59,.05)}
+.result-card:nth-child(2){border-top-color:var(--pink)}
+.result-card:nth-child(3){border-top-color:var(--yellow)}
+.result-card:nth-child(4){border-top-color:var(--petrol)}
+.result-value{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,3.4vw,2.9rem);line-height:1.05;font-weight:700;color:var(--petrol);margin-bottom:8px;font-variant-numeric:tabular-nums}
+.result-label{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;line-height:1.15;font-weight:700;color:var(--ink);margin-bottom:10px}
+.result-desc{color:var(--muted);font-size:.92rem;line-height:1.58;margin:0}
+.results-cta{margin-top:34px;display:flex;justify-content:flex-start}
 
 /* Seção Voluntariado */
 .volunteer-band{background:#f5eee8}
@@ -65,9 +62,10 @@
 .community-body .btn{margin-top:auto;align-self:flex-start}
 
 .newsletter{background:#f1f4f2}.newsletter-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter-inner>div{max-width:620px}.newsletter-note{font-size:.9rem;color:var(--muted)}.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.8);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.18);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.7)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}.page-hero{background:var(--petrol);color:#fff;padding:85px 0}.page-hero h1{font-size:clamp(2.8rem,6vw,4.5rem)}.page-hero p{max-width:700px;color:rgba(255,255,255,.85);font-size:1.08rem}.document-list{display:grid;gap:16px;max-width:850px}.document-item{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:16px}.document-item h3{font-size:1.35rem;margin:0}.status{white-space:nowrap;background:#fff4dc;color:#765400;padding:6px 12px;border-radius:999px;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.construction{padding:30px;background:#fff7ed;border:1px solid #f6d6bd;border-radius:18px;max-width:700px;color:#65452f}.construction strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;margin-bottom:6px}.mobile-menu{display:none}
-@media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}}
+@media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}.results-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.accel,.volunteer-inner{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}}
-@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn,.volunteer-content .btn{width:100%}}
+@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.results-grid{grid-template-columns:repeat(2,1fr);gap:14px}.result-card{padding:20px 18px}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
+@media(max-width:420px){.results-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -78,7 +76,7 @@
 <nav class="nav" id="site-nav" aria-label="Navegação principal">
 <a href="index.html#sobre">Sobre</a>
 <a href="index.html#atuacao">Atuação</a>
-<a href="index.html#projetos">Projetos</a>
+<a href="projetos.html">Projetos</a>
 <a href="index.html#comunidade">Comunidade</a>
 <a href="index.html#parceiros">Parceiros</a>
 <a href="transparencia.html">Transparência</a>
@@ -120,50 +118,42 @@
 <section class="section" id="atuacao" style="background:#f1f4f2"><div class="container"><div class="section-intro"><div class="kicker">Nossa atuação</div><h2>Como transformamos oportunidades em desenvolvimento</h2><p>Trabalhamos em três frentes conectadas às necessidades e às potências do território.</p></div>
 <div class="grid-3"><article class="card"><div class="card-number">01</div><h3>Juventude e Empregabilidade</h3><p>Conectamos jovens a oportunidades de emprego, aprendizagem, capacitação e desenvolvimento profissional, aproximando a comunidade do mercado de trabalho.</p></article><article class="card"><div class="card-number">02</div><h3>Empreendedorismo Feminino e Geração de Renda</h3><p>Fortalecemos mulheres empreendedoras por meio de conexões, capacitações, oportunidades de comercialização e desenvolvimento de negócios.</p></article><article class="card"><div class="card-number">03</div><h3>Desenvolvimento Comunitário e Participação Cidadã</h3><p>Promovemos mobilização, articulação territorial, participação cidadã e fortalecimento das conexões comunitárias.</p></article></div></div></section>
 
-<section class="section projects-band" id="projetos">
+<section class="section results-band" id="resultados" aria-labelledby="resultados-titulo">
   <div class="container">
-    <div class="projects-head">
-      <div class="section-intro">
-        <div class="kicker">Projetos · Acompanhe o COMQ</div>
-        <h2>Projetos e Atividades no Território</h2>
-        <p>Iniciativas práticas voltadas à empregabilidade juvenil, à geração de renda e ao fortalecimento comunitário no Mário Quintana.</p>
-      </div>
-      <a class="btn btn-light" href="#comunidade">Ver como participar <span aria-hidden="true">→</span></a>
+    <div class="section-intro">
+      <div class="kicker">Impacto no território</div>
+      <h2 id="resultados-titulo">Oportunidades que geram resultados.</h2>
+      <p>Desde 2024, conectamos pessoas, conhecimentos e oportunidades para fortalecer o desenvolvimento do território.</p>
     </div>
-    <div class="grid-3">
-      <article class="project-card">
-        <div class="project-thumb">
-          <img src="./images/jovem.jpg" alt="Jovens em trilha de empregabilidade e capacitação do COMQ" loading="lazy">
-          <span class="project-tag">Juventude</span>
-        </div>
-        <div class="project-body">
-          <h3>Trilha Jovem e Empregabilidade</h3>
-          <p>Orientação profissional, preparação para entrevistas, encaminhamento para vagas e conexões com oportunidades de aprendizagem e primeiro emprego.</p>
-          <a class="project-link" href="#jovens">Participar da iniciativa →</a>
-        </div>
+
+    <div class="results-grid">
+      <article class="result-card">
+        <div class="result-value" data-target="80" data-prefix="+" data-suffix="">+80</div>
+        <h3 class="result-label">Jovens empregados</h3>
+        <p class="result-desc">Jovens conectados ao mercado de trabalho desde 2024.</p>
       </article>
-      <article class="project-card">
-        <div class="project-thumb">
-          <img src="./images/empreendedoras.jpg" alt="Empreendedoras em encontro de formação e negócios do COMQ" loading="lazy">
-          <span class="project-tag">Geração de renda</span>
-        </div>
-        <div class="project-body">
-          <h3>Rede de Empreendedoras</h3>
-          <p>Formações, troca de experiências, fortalecimento de negócios locais e espaços de conexão para ampliar vendas e autonomia financeira.</p>
-          <a class="project-link" href="#empreendedoras">Participar da iniciativa →</a>
-        </div>
+
+      <article class="result-card">
+        <div class="result-value" data-target="20" data-prefix="R$ " data-suffix=" mil+">R$ 20 mil+</div>
+        <h3 class="result-label">Gerados em feiras de empreendedorismo</h3>
+        <p class="result-desc">Volume movimentado nas feiras do projeto Empreende MQ, no período de dezembro de 2025 a dezembro de 2026.</p>
       </article>
-      <article class="project-card">
-        <div class="project-thumb">
-          <img src="./images/Copy%20of%20IMG_0369.JPG" alt="Ação comunitária e voluntariado do COMQ no território" loading="lazy">
-          <span class="project-tag">Comunidade</span>
-        </div>
-        <div class="project-body">
-          <h3>Ações Comunitárias e Voluntariado</h3>
-          <p>Mutirões, oficinas, mentorias e articulação com parceiros locais para ampliar o alcance das oportunidades no bairro.</p>
-          <a class="project-link" href="#voluntario">Ser voluntário →</a>
-        </div>
+
+      <article class="result-card">
+        <div class="result-value" data-target="36" data-prefix="" data-suffix=" horas">36 horas</div>
+        <h3 class="result-label">De formação e capacitação</h3>
+        <p class="result-desc">Carga horária de encontros, cafés, cursos e outras atividades formativas realizadas com jovens e empreendedoras.</p>
       </article>
+
+      <article class="result-card">
+        <div class="result-value" data-target="500" data-prefix="Aproximadamente " data-suffix="">Aproximadamente 500</div>
+        <h3 class="result-label">Atendimentos em empregabilidade</h3>
+        <p class="result-desc">Atendimentos de orientação profissional, acompanhamento e apoio à empregabilidade de jovens da comunidade. O indicador considera atendimentos recorrentes, incluindo retornos e acompanhamentos, e não representa necessariamente 500 pessoas diferentes.</p>
+      </article>
+    </div>
+
+    <div class="results-cta">
+      <a class="btn btn-primary" href="projetos.html">Saiba mais sobre nossos projetos <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -245,7 +235,7 @@
 </main><footer class="footer" id="contato"><div class="container">
 <div class="footer-grid">
 <div><img class="footer-logo" src="./images/logo-comq.png" alt="COMQ — Centro de Oportunidades do Bairro Mário Quintana" loading="lazy"><p>Oportunidades na palma da mão da comunidade.</p><p><a href="https://www.instagram.com/comq.projeto/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/company/comq-projeto/" target="_blank" rel="noopener">LinkedIn</a></p></div>
-<div><h3>Institucional</h3><ul><li><a href="index.html#sobre">Sobre</a></li><li><a href="index.html#atuacao">Nossa atuação</a></li><li><a href="index.html#projetos">Projetos</a></li><li><a href="index.html#parceiros">Parceiros</a></li><li><a href="transparencia.html">Transparência</a></li></ul></div>
+<div><h3>Institucional</h3><ul><li><a href="index.html#sobre">Sobre</a></li><li><a href="index.html#atuacao">Nossa atuação</a></li><li><a href="projetos.html">Projetos</a></li><li><a href="index.html#parceiros">Parceiros</a></li><li><a href="transparencia.html">Transparência</a></li></ul></div>
 <div><h3>Participe</h3><ul><li><a href="https://forms.gle/3yYAbhbSC7A5Jrt87" target="_blank" rel="noopener">Jovens</a></li><li><a href="https://forms.gle/QFTQjJxdGRAjZw1p8" target="_blank" rel="noopener">Empreendedoras</a></li><li><a href="index.html#voluntario">Seja voluntário</a></li><li><a href="index.html#parceria">Seja parceiro</a></li><li><a href="apoie.html">Apoie</a></li></ul></div>
 <div><h3>Contato</h3><address>Bairro Mário Quintana, Porto Alegre/RS<br><a href="mailto:comq.projeto@gmail.com">comq.projeto@gmail.com</a><br><a href="https://wa.me/5551984386201" target="_blank" rel="noopener">WhatsApp institucional</a></address></div>
 </div><div class="footer-bottom"><span>© 2026 COMQ — Centro de Oportunidades do Bairro Mário Quintana. Todos os direitos reservados.</span><div class="footer-bottom-links"><a href="transparencia.html">Transparência</a><a href="mailto:comq.projeto@gmail.com?subject=Pol%C3%ADtica%20de%20Privacidade">Política de Privacidade</a><a href="mailto:comq.projeto@gmail.com?subject=Termos%20de%20Uso">Termos de Uso</a></div></div>
@@ -254,4 +244,58 @@
 const menuButton=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.nav');
 if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');menuButton.textContent=open?'×':'☰';});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Abrir menu');menuButton.textContent='☰';}));}
+
+(function(){
+  const section=document.getElementById('resultados');
+  if(!section)return;
+  const counters=section.querySelectorAll('.result-value[data-target]');
+  if(!counters.length)return;
+  const prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(prefersReduced||!('IntersectionObserver' in window))return;
+
+  let animated=false;
+  const formatNumber=(n)=>n.toLocaleString('pt-BR');
+
+  const runCounters=()=>{
+    if(animated)return;
+    animated=true;
+    const duration=1300;
+    const start=performance.now();
+
+    const step=(now)=>{
+      const progress=Math.min((now-start)/duration,1);
+      const eased=1-Math.pow(1-progress,3);
+
+      counters.forEach((el)=>{
+        const target=Number(el.dataset.target)||0;
+        const prefix=el.dataset.prefix||'';
+        const suffix=el.dataset.suffix||'';
+        const current=Math.round(target*eased);
+        el.textContent=prefix+formatNumber(current)+suffix;
+      });
+
+      if(progress<1){
+        requestAnimationFrame(step);
+      }else{
+        counters.forEach((el)=>{
+          const target=Number(el.dataset.target)||0;
+          const prefix=el.dataset.prefix||'';
+          const suffix=el.dataset.suffix||'';
+          el.textContent=prefix+formatNumber(target)+suffix;
+        });
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const observer=new IntersectionObserver((entries)=>{
+    if(entries.some((entry)=>entry.isIntersecting)){
+      observer.disconnect();
+      runCounters();
+    }
+  },{threshold:0.25});
+
+  observer.observe(section);
+})();
 </script></body></html>
