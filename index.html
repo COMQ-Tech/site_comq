@@ -23,16 +23,19 @@
 .pillars{display:grid;gap:14px}.pillar{padding:20px 22px;background:#fff;border-left:4px solid var(--orange);border-radius:0 14px 14px 0;box-shadow:var(--shadow)}.pillar h3{margin-bottom:6px}.pillar p{margin:0;color:var(--muted)}.dark-section{background:var(--petrol);color:#fff}.dark-section h2,.dark-section h3{color:#fff}.dark-section .section-intro p{color:rgba(255,255,255,.78)}.accel{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center}.accel-mark{padding:18px;background:transparent;border:0;text-align:center}.accel-mark strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;color:var(--yellow)}.accel-mark span{display:block;margin-top:12px;font-size:.9rem;color:rgba(255,255,255,.8)}.accel-badge{display:block;width:100%;max-width:620px;height:auto;margin:0 auto;border-radius:18px}.accel-copy p{color:rgba(255,255,255,.86)}.text-link{color:var(--yellow);font-weight:900;text-underline-offset:4px}.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:center}.logo-tile{height:130px;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.logo-tile img{max-height:82px;max-width:100%;object-fit:contain;filter:none;transition:transform .25s ease}.logo-tile:hover img,.logo-tile:focus-within img{transform:scale(1.05)}.split{display:grid;grid-template-columns:1fr 1fr;min-height:390px}.split-panel{padding:70px max(40px,calc((100vw - 1160px)/2));background:#fff}.split-panel.dark{background:var(--petrol);color:#fff;padding-left:50px;padding-right:max(40px,calc((100vw - 1160px)/2))}.split-panel.dark h2{color:#fff}.split-panel.dark p{color:rgba(255,255,255,.82)}.benefits{padding:0;list-style:none;display:grid;gap:13px;margin:24px 0}.benefits li:before{content:"•";color:var(--orange);font-size:1.4rem;font-weight:900;margin-right:10px}
 
 /* Seção Resultados */
-.results-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
-.result-card{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--orange);border-radius:18px;padding:26px 22px;display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(24,54,59,.05)}
+.results-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:72px 0}
+.results-band .section-intro{margin-bottom:30px}
+.results-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:stretch}
+.result-card{min-width:0;background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--orange);border-radius:18px;padding:24px 20px;display:flex;flex-direction:column;justify-content:flex-start;box-shadow:0 8px 24px rgba(24,54,59,.05)}
 .result-card:nth-child(2){border-top-color:var(--pink)}
 .result-card:nth-child(3){border-top-color:var(--yellow)}
 .result-card:nth-child(4){border-top-color:var(--petrol)}
-.result-value{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,3.4vw,2.9rem);line-height:1.05;font-weight:700;color:var(--petrol);margin-bottom:8px;font-variant-numeric:tabular-nums}
-.result-label{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;line-height:1.15;font-weight:700;color:var(--ink);margin-bottom:10px}
-.result-desc{color:var(--muted);font-size:.92rem;line-height:1.58;margin:0}
-.results-cta{margin-top:34px;display:flex;justify-content:flex-start}
+.result-value{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.35rem,3.3vw,2.95rem);line-height:1;font-weight:700;letter-spacing:-.01em;color:var(--petrol);margin-bottom:10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.result-label{font-family:'Barlow Condensed',sans-serif;font-size:1.28rem;line-height:1.18;font-weight:700;color:var(--ink);margin:0 0 8px}
+.result-desc{color:var(--muted);font-size:.92rem;line-height:1.55;margin:0}
+.results-footnote{margin:16px 0 0;font-size:.82rem;line-height:1.5;color:var(--muted)}
+.results-cta{margin-top:24px;display:flex;justify-content:flex-start}
+.results-cta .btn{padding:12px 24px;font-size:.96rem}
 
 /* Seção Voluntariado */
 .volunteer-band{background:#f5eee8}
@@ -62,10 +65,10 @@
 .community-body .btn{margin-top:auto;align-self:flex-start}
 
 .newsletter{background:#f1f4f2}.newsletter-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter-inner>div{max-width:620px}.newsletter-note{font-size:.9rem;color:var(--muted)}.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.8);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.18);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.7)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}.page-hero{background:var(--petrol);color:#fff;padding:85px 0}.page-hero h1{font-size:clamp(2.8rem,6vw,4.5rem)}.page-hero p{max-width:700px;color:rgba(255,255,255,.85);font-size:1.08rem}.document-list{display:grid;gap:16px;max-width:850px}.document-item{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:16px}.document-item h3{font-size:1.35rem;margin:0}.status{white-space:nowrap;background:#fff4dc;color:#765400;padding:6px 12px;border-radius:999px;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.construction{padding:30px;background:#fff7ed;border:1px solid #f6d6bd;border-radius:18px;max-width:700px;color:#65452f}.construction strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;margin-bottom:6px}.mobile-menu{display:none}
-@media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}.results-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.accel,.volunteer-inner{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}}
-@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.ods-list{gap:10px}.ods-list img{width:72px;height:72px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.results-grid{grid-template-columns:repeat(2,1fr);gap:14px}.result-card{padding:20px 18px}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
-@media(max-width:420px){.results-grid{grid-template-columns:1fr}}
+@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:10px}.ods-list img{width:72px;height:72px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
+@media(max-width:400px){.results-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -130,27 +133,29 @@
       <article class="result-card">
         <div class="result-value" data-target="80" data-prefix="+" data-suffix="">+80</div>
         <h3 class="result-label">Jovens empregados</h3>
-        <p class="result-desc">Jovens conectados ao mercado de trabalho desde 2024.</p>
+        <p class="result-desc">Conectados ao mercado de trabalho desde 2024.</p>
       </article>
 
       <article class="result-card">
         <div class="result-value" data-target="20" data-prefix="R$ " data-suffix=" mil+">R$ 20 mil+</div>
-        <h3 class="result-label">Gerados em feiras de empreendedorismo</h3>
-        <p class="result-desc">Volume movimentado nas feiras do projeto Empreende MQ, no período de dezembro de 2025 a dezembro de 2026.</p>
+        <h3 class="result-label">Movimentados em feiras</h3>
+        <p class="result-desc">No projeto Empreende MQ, entre dezembro de 2025 e dezembro de 2026.</p>
       </article>
 
       <article class="result-card">
-        <div class="result-value" data-target="36" data-prefix="" data-suffix=" horas">36 horas</div>
-        <h3 class="result-label">De formação e capacitação</h3>
-        <p class="result-desc">Carga horária de encontros, cafés, cursos e outras atividades formativas realizadas com jovens e empreendedoras.</p>
+        <div class="result-value" data-target="36" data-prefix="" data-suffix="h">36h</div>
+        <h3 class="result-label">De formação</h3>
+        <p class="result-desc">Encontros, cafés, cursos e atividades formativas.</p>
       </article>
 
       <article class="result-card">
-        <div class="result-value" data-target="500" data-prefix="Aproximadamente " data-suffix="">Aproximadamente 500</div>
+        <div class="result-value" data-target="500" data-prefix="~" data-suffix="">~500</div>
         <h3 class="result-label">Atendimentos em empregabilidade</h3>
-        <p class="result-desc">Atendimentos de orientação profissional, acompanhamento e apoio à empregabilidade de jovens da comunidade. O indicador considera atendimentos recorrentes, incluindo retornos e acompanhamentos, e não representa necessariamente 500 pessoas diferentes.</p>
+        <p class="result-desc">Orientação profissional e acompanhamento de jovens.</p>
       </article>
     </div>
+
+    <p class="results-footnote">Os atendimentos contabilizam retornos e acompanhamentos, não correspondendo necessariamente a pessoas distintas.</p>
 
     <div class="results-cta">
       <a class="btn btn-primary" href="projetos.html">Saiba mais sobre nossos projetos <span aria-hidden="true">→</span></a>
@@ -259,14 +264,19 @@ if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.clas
   const runCounters=()=>{
     if(animated)return;
     animated=true;
-    const duration=1300;
+    const duration=2700;
+    const stagger=120;
     const start=performance.now();
 
     const step=(now)=>{
-      const progress=Math.min((now-start)/duration,1);
-      const eased=1-Math.pow(1-progress,3);
+      let allDone=true;
 
-      counters.forEach((el)=>{
+      counters.forEach((el,index)=>{
+        const elapsed=Math.max(0,now-(start+index*stagger));
+        const progress=Math.min(elapsed/duration,1);
+        if(progress<1)allDone=false;
+
+        const eased=1-Math.pow(1-progress,4);
         const target=Number(el.dataset.target)||0;
         const prefix=el.dataset.prefix||'';
         const suffix=el.dataset.suffix||'';
@@ -274,7 +284,7 @@ if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.clas
         el.textContent=prefix+formatNumber(current)+suffix;
       });
 
-      if(progress<1){
+      if(!allDone){
         requestAnimationFrame(step);
       }else{
         counters.forEach((el)=>{
@@ -294,7 +304,7 @@ if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.clas
       observer.disconnect();
       runCounters();
     }
-  },{threshold:0.25});
+  },{threshold:0.3});
 
   observer.observe(section);
 })();
