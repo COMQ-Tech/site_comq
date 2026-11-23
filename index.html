@@ -20,7 +20,26 @@
 .ods-list img{width:88px;height:88px;border-radius:12px;object-fit:cover;box-shadow:0 6px 16px rgba(24,54,59,.10);transition:transform .2s ease}
 .ods-list img:hover{transform:translateY(-3px)}
 
-.pillars{display:grid;gap:14px}.pillar{padding:20px 22px;background:#fff;border-left:4px solid var(--orange);border-radius:0 14px 14px 0;box-shadow:var(--shadow)}.pillar h3{margin-bottom:6px}.pillar p{margin:0;color:var(--muted)}.dark-section{background:var(--petrol);color:#fff}.dark-section h2,.dark-section h3{color:#fff}.dark-section .section-intro p{color:rgba(255,255,255,.78)}.accel{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:center}.accel-mark{padding:18px;background:transparent;border:0;text-align:center}.accel-mark strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1;color:var(--yellow)}.accel-mark span{display:block;margin-top:12px;font-size:.9rem;color:rgba(255,255,255,.8)}.accel-badge{display:block;width:100%;max-width:620px;height:auto;margin:0 auto;border-radius:18px}.accel-copy p{color:rgba(255,255,255,.86)}.text-link{color:var(--yellow);font-weight:900;text-underline-offset:4px}.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:center}.logo-tile{height:130px;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.logo-tile img{max-height:82px;max-width:100%;object-fit:contain;filter:none;transition:transform .25s ease}.logo-tile:hover img,.logo-tile:focus-within img{transform:scale(1.05)}.split{display:grid;grid-template-columns:1fr 1fr;min-height:390px}.split-panel{padding:70px max(40px,calc((100vw - 1160px)/2));background:#fff}.split-panel.dark{background:var(--petrol);color:#fff;padding-left:50px;padding-right:max(40px,calc((100vw - 1160px)/2))}.split-panel.dark h2{color:#fff}.split-panel.dark p{color:rgba(255,255,255,.82)}.benefits{padding:0;list-style:none;display:grid;gap:13px;margin:24px 0}.benefits li:before{content:"•";color:var(--orange);font-size:1.4rem;font-weight:900;margin-right:10px}
+.pillars{display:grid;gap:14px}.pillar{padding:20px 22px;background:#fff;border-left:4px solid var(--orange);border-radius:0 14px 14px 0;box-shadow:var(--shadow)}.pillar h3{margin-bottom:6px}.pillar p{margin:0;color:var(--muted)}
+
+/* Seção Fortalecendo Nossa Atuação (Marcos Institucionais) */
+.dark-section{background:var(--petrol);color:#fff}
+.dark-section .kicker{color:var(--yellow)}
+.dark-section h2{color:#fff}
+.dark-section .section-intro p{color:rgba(255,255,255,.82)}
+.milestones-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.milestone-card{min-width:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-top:4px solid var(--yellow);border-radius:20px;padding:24px;display:flex;flex-direction:column}
+.milestone-card:nth-child(2){border-top-color:var(--orange)}
+.milestone-card:nth-child(3){border-top-color:var(--pink)}
+.milestone-logo-box{height:112px;background:#fff;border-radius:14px;padding:16px 20px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.milestone-logo-box img{max-height:76px;max-width:100%;width:auto;height:auto;object-fit:contain}
+.milestone-category{font-size:.74rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;color:var(--yellow);margin-bottom:8px}
+.milestone-card:nth-child(2) .milestone-category{color:#ffaa73}
+.milestone-card:nth-child(3) .milestone-category{color:#ff85cb}
+.milestone-card h3{color:#fff;font-size:1.45rem;margin-bottom:10px}
+.milestone-card p{color:rgba(255,255,255,.86);font-size:.95rem;line-height:1.62;margin:0}
+
+.logos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:center}.logo-tile{height:130px;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.logo-tile img{max-height:82px;max-width:100%;object-fit:contain;filter:none;transition:transform .25s ease}.logo-tile:hover img,.logo-tile:focus-within img{transform:scale(1.05)}.split{display:grid;grid-template-columns:1fr 1fr;min-height:390px}.split-panel{padding:70px max(40px,calc((100vw - 1160px)/2));background:#fff}.split-panel.dark{background:var(--petrol);color:#fff;padding-left:50px;padding-right:max(40px,calc((100vw - 1160px)/2))}.split-panel.dark h2{color:#fff}.split-panel.dark p{color:rgba(255,255,255,.82)}.benefits{padding:0;list-style:none;display:grid;gap:13px;margin:24px 0}.benefits li:before{content:"•";color:var(--orange);font-size:1.4rem;font-weight:900;margin-right:10px}
 
 /* Seção Resultados */
 .results-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:72px 0}
@@ -66,8 +85,8 @@
 
 .newsletter{background:#f1f4f2}.newsletter-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter-inner>div{max-width:620px}.newsletter-note{font-size:.9rem;color:var(--muted)}.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.8);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.18);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.7)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}.page-hero{background:var(--petrol);color:#fff;padding:85px 0}.page-hero h1{font-size:clamp(2.8rem,6vw,4.5rem)}.page-hero p{max-width:700px;color:rgba(255,255,255,.85);font-size:1.08rem}.document-list{display:grid;gap:16px;max-width:850px}.document-item{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:16px}.document-item h3{font-size:1.35rem;margin:0}.status{white-space:nowrap;background:#fff4dc;color:#765400;padding:6px 12px;border-radius:999px;font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.construction{padding:30px;background:#fff7ed;border:1px solid #f6d6bd;border-radius:18px;max-width:700px;color:#65452f}.construction strong{display:block;font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;margin-bottom:6px}.mobile-menu{display:none}
 @media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.accel,.volunteer-inner{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}}
-@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:10px}.ods-list img{width:72px;height:72px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
+@media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.volunteer-inner,.milestones-grid{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}}
+@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:10px}.ods-list img{width:72px;height:72px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.milestone-card{padding:22px}.milestone-logo-box{height:100px}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.document-item{align-items:flex-start;flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
 @media(max-width:400px){.results-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
@@ -163,7 +182,57 @@
   </div>
 </section>
 
-<section class="section dark-section"><div class="container accel"><div class="accel-mark"><img class="accel-badge" src="./images/amplitudeperifa.png" alt="COMQ acelerado pelo Amplitude Perifa 2026, Instituto Helda Gerdau e Grupo Semente Negócios" loading="lazy"></div><div class="accel-copy"><div class="kicker">Fortalecendo nossa atuação</div><h2>Aprender, conectar e ampliar nosso impacto.</h2><p>O COMQ integra o Amplitude Perifa 2026, iniciativa do Instituto Helda Gerdau, realizada pelo Grupo Semente Negócios. O programa fortalece negócios periféricos de impacto socioambiental por meio de formação, acompanhamento e conexões estratégicas.</p><p>Essa participação representa uma etapa importante no desenvolvimento institucional do COMQ, contribuindo para aprimorar a gestão, fortalecer a sustentabilidade e ampliar nossa capacidade de atuação no território.</p><a class="text-link" href="https://sementenegocios.com.br/amplitude-perifa/" target="_blank" rel="noopener">Conheça o programa →</a></div></div></section>
+<section class="section dark-section" id="trajetoria" aria-labelledby="trajetoria-titulo">
+  <div class="container">
+    <div class="section-intro">
+      <div class="kicker">Fortalecendo nossa atuação</div>
+      <h2 id="trajetoria-titulo">Trajetória institucional, reconhecimento e participação.</h2>
+      <p>Caminhos que ampliam nossa capacidade de gestão, dão visibilidade ao trabalho no território e fortalecem a incidência comunitária do COMQ.</p>
+    </div>
+
+    <div class="milestones-grid">
+      <article class="milestone-card">
+        <div class="milestone-logo-box">
+          <img
+            src="https://sementenegocios.com.br/wp-content/uploads/2026/03/IV_Amplitude-Perifa_AmareloBranco02-e1696446870512.gif"
+            alt="Amplitude Perifa — Instituto Helda Gerdau e Grupo Semente Negócios"
+            loading="lazy"
+          >
+        </div>
+        <div class="milestone-category">Aceleração institucional</div>
+        <h3>Amplitude Perifa 2026</h3>
+        <p>Participação no programa de aceleração Amplitude Perifa 2026, do Instituto Helda Gerdau, realizado pelo Grupo Semente Negócios, fortalecendo a gestão, a sustentabilidade e o desenvolvimento institucional do COMQ.</p>
+      </article>
+
+      <article class="milestone-card">
+        <div class="milestone-logo-box">
+          <img
+            src="https://institutocoria.org.br/wp-content/uploads/2024/05/12-768x260.png"
+            alt="Expo Favela Innovation RS"
+            loading="lazy"
+          >
+        </div>
+        <div class="milestone-category">Reconhecimento</div>
+        <h3>Expo Favela Innovation RS</h3>
+        <p>Pré-finalista na segunda e terceira edições da Expo Favela Innovation RS, iniciativa que conecta negócios e projetos das periferias a oportunidades, visibilidade e conexões estratégicas.</p>
+      </article>
+
+      <article class="milestone-card">
+        <div class="milestone-logo-box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2C8eI3LXPSmbGQB3tYphvhn43p3ePENqGNNCPsvVaZu75M9W6U4o2z1U&s=10"
+            alt="Orçamento Participativo de Porto Alegre"
+            loading="lazy"
+          >
+        </div>
+        <div class="milestone-category">Participação cidadã</div>
+        <h3>Orçamento Participativo de Porto Alegre</h3>
+        <p>Entidade participante do Orçamento Participativo de Porto Alegre, na Região Nordeste, com atuação na temática Desenvolvimento Econômico, Tributação, Turismo e Trabalho (DETTT), vinculada ao território do bairro Mário Quintana.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="parceiros"><div class="container"><div class="section-intro"><div class="kicker">Conexões que fortalecem</div><h2>Quem caminha com o COMQ</h2><p>Iniciativas, empresas e organizações que acreditam no potencial das pessoas e na força das oportunidades.</p></div>
 <div class="logos"><div class="logo-tile"><img src="./images/brunetto.png" alt="Brunetto" loading="lazy"></div><div class="logo-tile"><img src="./images/fijo.png" alt="Fundação Fijo" loading="lazy"></div><div class="logo-tile"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Sebrae.svg/3840px-Sebrae.svg.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Sebrae" loading="lazy"></div></div></div></section>
 <section class="split" id="parceria"><div class="split-panel"><div class="kicker">Conexões institucionais</div><h2>Seja um parceiro</h2><p>Sua organização pode fazer parte da construção de novas oportunidades no território. Ao estabelecer uma parceria com o COMQ, sua empresa contribui para o desenvolvimento comunitário e fortalece conexões entre pessoas, organizações e oportunidades.</p><ul class="benefits"><li>Ofereça vagas de emprego, estágio e aprendizagem.</li><li>Apoie projetos, eventos e formações.</li><li>Disponibilize profissionais para mentorias e palestras.</li></ul><a class="btn btn-primary" href="https://wa.me/5551984386201?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20uma%20parceria%20com%20o%20COMQ." target="_blank" rel="noopener">Quero ser parceiro →</a></div><div class="split-panel dark"><div class="kicker">Por que caminhar com o COMQ?</div><h2>Parcerias com propósito e conexão territorial.</h2><ul class="benefits"><li>Impacto social direto na comunidade.</li><li>Conexão com talentos locais.</li><li>Fortalecimento da responsabilidade social empresarial.</li><li>Participação em iniciativas comunitárias.</li><li>Construção de relações de longo prazo.</li></ul></div></section>
