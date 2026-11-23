@@ -50,13 +50,26 @@
 
 <style>
 :root{--petrol:#28535A;--pink:#C00D7B;--orange:#FA7E34;--orange-text:#C84E06;--yellow:#FFC645;--ink:#203238;--muted:#526368;--paper:#fbfaf8;--white:#fff;--line:#e8eceb;--shadow:0 18px 50px rgba(24,54,59,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:'Nunito',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}img{max-width:100%;display:block}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:3px}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;color:var(--petrol);font-weight:800;border-radius:8px;box-shadow:var(--shadow);padding:12px 16px;z-index:999}.skip-link:focus{left:12px}.container{width:min(1160px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(40,83,90,.10)}.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{width:145px;height:auto;max-height:60px;object-fit:contain;flex-shrink:0}.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;font-weight:800;color:#2E464C;white-space:nowrap}.nav a:hover{color:var(--orange-text)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 23px;border-radius:999px;text-decoration:none;font-weight:900;font-family:'Barlow Condensed',sans-serif;letter-spacing:.04em;text-transform:uppercase;transition:.2s;border:0;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--orange);color:#18272B;box-shadow:0 8px 20px rgba(250,126,52,.22)}.btn-light{background:#fff;color:var(--petrol)}.btn-yellow{background:var(--yellow);color:var(--ink);box-shadow:0 8px 20px rgba(255,198,69,.28)}.btn-pink{background:var(--pink);color:#fff;box-shadow:0 8px 20px rgba(192,13,123,.24)}.menu-toggle{display:none;background:none;border:0;color:var(--petrol);font-size:1.7rem;padding:8px;cursor:pointer}.hero{min-height:590px;display:flex;align-items:center;position:relative;isolation:isolate;color:#fff;background:var(--petrol);overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,49,53,.92),rgba(20,49,53,.62) 58%,rgba(20,49,53,.28));z-index:-1}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero-content{max-width:720px;padding:90px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--yellow)}h1,h2,h3,.display{font-family:'Barlow Condensed',sans-serif;line-height:1.06;margin:0 0 18px}h1{font-size:clamp(3rem,7vw,5.5rem);max-width:750px}h1 span,.accent{color:var(--yellow)}h2{font-size:clamp(2.2rem,4vw,3.2rem);color:var(--petrol)}h3{font-size:1.55rem;color:var(--petrol)}p{margin:0 0 18px}.hero p{font-size:1.12rem;max-width:650px;color:rgba(255,255,255,.94)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.section{padding:88px 0}.section-intro{max-width:720px;margin-bottom:38px}.section-intro p{color:var(--muted);font-size:1.05rem}.kicker{color:var(--orange-text);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow);transition:transform 300ms cubic-bezier(.22,1,.36,1),background-color 300ms cubic-bezier(.22,1,.36,1),border-color 300ms cubic-bezier(.22,1,.36,1),box-shadow 300ms cubic-bezier(.22,1,.36,1)}.card p{color:var(--muted);margin-bottom:0}.card-number{font-family:'Barlow Condensed',sans-serif;color:var(--orange-text);font-size:2.4rem;font-weight:700}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:start}.about-copy{font-size:1.1rem;color:var(--muted)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:'Nunito',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}img{max-width:100%;display:block}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--orange);outline-offset:3px}.skip-link{position:absolute;left:-9999px;top:8px;background:#fff;color:var(--petrol);font-weight:800;border-radius:8px;box-shadow:var(--shadow);padding:12px 16px;z-index:999}.skip-link:focus{left:12px}.container{width:min(1160px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(40,83,90,.10)}.header-inner{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{width:145px;height:auto;max-height:60px;object-fit:contain;flex-shrink:0}.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.nav a{text-decoration:none;font-size:.9rem;font-weight:800;color:#2E464C;white-space:nowrap}.nav a:hover{color:var(--orange-text)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 23px;border-radius:999px;text-decoration:none;font-weight:900;font-family:'Barlow Condensed',sans-serif;letter-spacing:.04em;text-transform:uppercase;transition:.2s;border:0;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--orange);color:#18272B;box-shadow:0 8px 20px rgba(250,126,52,.22)}.btn-light{background:#fff;color:var(--petrol)}.btn-yellow{background:var(--yellow);color:var(--ink);box-shadow:0 8px 20px rgba(255,198,69,.28)}.btn-pink{background:var(--pink);color:#fff;box-shadow:0 8px 20px rgba(192,13,123,.24)}.menu-toggle{display:none;background:none;border:0;color:var(--petrol);font-size:1.7rem;padding:8px;cursor:pointer}.hero{min-height:590px;display:flex;align-items:center;position:relative;isolation:isolate;color:#fff;background:var(--petrol);overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,49,53,.92),rgba(20,49,53,.62) 58%,rgba(20,49,53,.28));z-index:-1}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero-content{max-width:720px;padding:90px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:900;color:var(--yellow)}h1,h2,h3,.display{font-family:'Barlow Condensed',sans-serif;line-height:1.06;margin:0 0 18px}h1{font-size:clamp(3rem,7vw,5.5rem);max-width:750px}h1 span,.accent{color:var(--yellow)}h2{font-size:clamp(2.2rem,4vw,3.2rem);color:var(--petrol)}h3{font-size:1.55rem;color:var(--petrol)}p{margin:0 0 18px}.hero p{font-size:1.12rem;max-width:650px;color:rgba(255,255,255,.94)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.section{padding:88px 0}.section-intro{max-width:720px;margin-bottom:38px}.section-intro p{color:var(--muted);font-size:1.05rem}.kicker{color:var(--orange-text);font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+
+/* Cartões Nossa Atuação com foto ao fundo e efeito vidro fosco */
+.card{position:relative;isolation:isolate;overflow:hidden;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--petrol);border:1px solid rgba(40,83,90,.22);border-radius:20px;padding:22px;box-shadow:var(--shadow);transition:transform 300ms cubic-bezier(.22,1,.36,1),border-color 300ms cubic-bezier(.22,1,.36,1),box-shadow 300ms cubic-bezier(.22,1,.36,1)}
+.card-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2;transition:transform 500ms cubic-bezier(.22,1,.36,1)}
+.card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,49,53,.18) 0%,rgba(20,49,53,.62) 100%);z-index:-1}
+.card-glass{background:rgba(24,54,59,.74);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:22px 22px 24px;transition:background-color 300ms cubic-bezier(.22,1,.36,1),border-color 300ms cubic-bezier(.22,1,.36,1)}
+.card-number{font-family:'Barlow Condensed',sans-serif;color:var(--yellow);font-size:2.25rem;line-height:1;font-weight:700;margin-bottom:8px}
+.card:nth-child(2) .card-number{color:#ffaa73}
+.card:nth-child(3) .card-number{color:#ff9fd6}
+.card h3{color:#fff;margin-bottom:8px}
+.card p{color:rgba(255,255,255,.92);margin-bottom:0;font-size:.96rem;line-height:1.6}
+
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:start}.about-copy{font-size:1.1rem;color:var(--muted)}
 
 /* ODS na seção Quem Somos */
 .ods-block{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}
 .ods-label{font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:14px}
 .ods-list{display:flex;flex-wrap:wrap;gap:14px}
-.ods-list img{width:88px;height:88px;border-radius:12px;object-fit:cover;box-shadow:0 6px 16px rgba(24,54,59,.10);transition:transform .2s ease}
+.ods-list img{width:114px;height:114px;border-radius:14px;object-fit:cover;box-shadow:0 6px 16px rgba(24,54,59,.10);transition:transform .2s ease}
 .ods-list img:hover{transform:translateY(-3px)}
 
 /* Cartões Missão, Visão e Valores */
@@ -125,9 +138,13 @@
 
   .card:hover{
     transform:translate(4px,-3px);
-    background-color:#f4f8f8;
-    border-color:rgba(40,83,90,.28);
-    box-shadow:0 22px 48px rgba(40,83,90,.16);
+    border-color:rgba(255,198,69,.55);
+    box-shadow:0 22px 48px rgba(24,54,59,.24);
+  }
+  .card:hover .card-bg{transform:scale(1.05)}
+  .card:hover .card-glass{
+    background:rgba(24,54,59,.84);
+    border-color:rgba(255,255,255,.30);
   }
 
   .result-card:hover{
@@ -181,7 +198,7 @@
 .newsletter{background:#f1f4f2}.newsletter-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter-inner>div{max-width:620px}.newsletter-note{font-size:.9rem;color:var(--muted)}.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.88);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.22);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.82)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}
 @media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.volunteer-inner,.milestones-grid{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}}
-@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:10px}.ods-list img{width:72px;height:72px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.milestone-card{padding:22px}.milestone-logo-box{height:100px}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
+@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:12px}.ods-list img{width:88px;height:88px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.card{min-height:290px}.milestone-card{padding:22px}.milestone-logo-box{height:100px}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
 @media(max-width:400px){.results-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
@@ -233,10 +250,10 @@
         <div class="ods-block">
           <div class="ods-label">Compromisso com os ODS da ONU</div>
           <div class="ods-list">
-            <img src="https://www.un.org/sites/un2.un.org/files/sdg-icon-pt-04-2-01.png" alt="ODS 4 — Educação de Qualidade" title="ODS 4 — Educação de Qualidade" width="88" height="88" loading="lazy" referrerpolicy="no-referrer">
-            <img src="https://www.atlasodsamazonas.ufam.edu.br/images/SDG-icon-PT-05.jpg" alt="ODS 5 — Igualdade de Gênero" title="ODS 5 — Igualdade de Gênero" width="88" height="88" loading="lazy" referrerpolicy="no-referrer">
-            <img src="https://cbae.ufrj.br/wp-content/uploads/2025/02/SDG-8-e1740418351744.jpg" alt="ODS 8 — Trabalho Decente e Crescimento Econômico" title="ODS 8 — Trabalho Decente e Crescimento Econômico" width="88" height="88" loading="lazy" referrerpolicy="no-referrer">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-_YLMc9kQvUCHC38yHEwBAt3cOos_kxHoShfwtVSvcGz8hfpQiwtli6a&s=10" alt="ODS 11 — Cidades e Comunidades Sustentáveis" title="ODS 11 — Cidades e Comunidades Sustentáveis" width="88" height="88" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://www.un.org/sites/un2.un.org/files/sdg-icon-pt-04-2-01.png" alt="ODS 4 — Educação de Qualidade" title="ODS 4 — Educação de Qualidade" width="114" height="114" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://www.atlasodsamazonas.ufam.edu.br/images/SDG-icon-PT-05.jpg" alt="ODS 5 — Igualdade de Gênero" title="ODS 5 — Igualdade de Gênero" width="114" height="114" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://cbae.ufrj.br/wp-content/uploads/2025/02/SDG-8-e1740418351744.jpg" alt="ODS 8 — Trabalho Decente e Crescimento Econômico" title="ODS 8 — Trabalho Decente e Crescimento Econômico" width="114" height="114" loading="lazy" referrerpolicy="no-referrer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-_YLMc9kQvUCHC38yHEwBAt3cOos_kxHoShfwtVSvcGz8hfpQiwtli6a&s=10" alt="ODS 11 — Cidades e Comunidades Sustentáveis" title="ODS 11 — Cidades e Comunidades Sustentáveis" width="114" height="114" loading="lazy" referrerpolicy="no-referrer">
           </div>
         </div>
       </div>
@@ -266,19 +283,28 @@
       </div>
       <div class="grid-3">
         <article class="card">
-          <div class="card-number" aria-hidden="true">01</div>
-          <h3>Juventude e Empregabilidade</h3>
-          <p>Conectamos jovens a oportunidades de emprego, aprendizagem, capacitação e desenvolvimento profissional, aproximando a comunidade do mercado de trabalho.</p>
+          <img class="card-bg" src="./images/01-jovem.jpg" alt="" aria-hidden="true" loading="lazy">
+          <div class="card-glass">
+            <div class="card-number" aria-hidden="true">01</div>
+            <h3>Juventude e Empregabilidade</h3>
+            <p>Conectamos jovens a oportunidades de emprego, aprendizagem, capacitação e desenvolvimento profissional, aproximando a comunidade do mercado de trabalho.</p>
+          </div>
         </article>
         <article class="card">
-          <div class="card-number" aria-hidden="true">02</div>
-          <h3>Empreendedorismo Feminino e Geração de Renda</h3>
-          <p>Fortalecemos mulheres empreendedoras por meio de conexões, capacitações, oportunidades de comercialização e desenvolvimento de negócios.</p>
+          <img class="card-bg" src="./images/02-empreendedoras.jpg" alt="" aria-hidden="true" loading="lazy">
+          <div class="card-glass">
+            <div class="card-number" aria-hidden="true">02</div>
+            <h3>Empreendedorismo Feminino e Geração de Renda</h3>
+            <p>Fortalecemos mulheres empreendedoras por meio de conexões, capacitações, oportunidades de comercialização e desenvolvimento de negócios.</p>
+          </div>
         </article>
         <article class="card">
-          <div class="card-number" aria-hidden="true">03</div>
-          <h3>Desenvolvimento Comunitário e Participação Cidadã</h3>
-          <p>Promovemos mobilização, articulação territorial, participação cidadã e fortalecimento das conexões comunitárias.</p>
+          <img class="card-bg" src="./images/03-desenvolvimento.jpg" alt="" aria-hidden="true" loading="lazy">
+          <div class="card-glass">
+            <div class="card-number" aria-hidden="true">03</div>
+            <h3>Desenvolvimento Comunitário e Participação Cidadã</h3>
+            <p>Promovemos mobilização, articulação territorial, participação cidadã e fortalecimento das conexões comunitárias.</p>
+          </div>
         </article>
       </div>
     </div>
