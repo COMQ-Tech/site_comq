@@ -195,10 +195,23 @@
 .community-body p{color:var(--muted);margin-bottom:24px}
 .community-body .btn{margin-top:auto;align-self:flex-start}
 
-.newsletter{background:#f1f4f2}.newsletter-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter-inner>div{max-width:620px}.newsletter-note{font-size:.9rem;color:var(--muted)}.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.88);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.22);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.82)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}
+/* Seção Amigos do COMQ (Apoio Recorrente) */
+.friends-band{background:#f1f4f2}
+.friends-card{background:linear-gradient(135deg,#fff 0%,#fffaf2 100%);border:1px solid rgba(250,126,52,.24);border-top:5px solid var(--orange);border-radius:24px;padding:44px 48px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;gap:36px;position:relative;overflow:hidden}
+.friends-card:before{content:"";position:absolute;top:0;right:0;width:240px;height:5px;background:var(--yellow)}
+.friends-copy{max-width:650px}
+.friends-pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(255,198,69,.32);color:var(--ink);font-size:.76rem;font-weight:900;text-transform:uppercase;letter-spacing:.10em;margin-bottom:14px}
+.friends-pill:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.friends-copy h2{margin-bottom:14px}
+.friends-lead{font-size:1.08rem;font-weight:700;color:var(--ink);margin-bottom:12px}
+.friends-copy p:last-child{color:var(--muted);margin-bottom:0}
+.friends-action{flex-shrink:0}
+.friends-action .btn{padding:15px 28px;font-size:1rem;background:linear-gradient(135deg,var(--yellow) 0%,#ffb72b 100%);color:var(--ink);box-shadow:0 10px 24px rgba(250,126,52,.24);border:1px solid rgba(250,126,52,.28)}
+
+.footer{background:#173b40;color:#fff;padding:56px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px}.footer-logo{width:170px;max-height:75px;object-fit:contain;object-position:left;margin-bottom:18px;filter:brightness(0) invert(1)}.footer h3{font-size:1.25rem;color:var(--yellow);margin-bottom:14px}.footer p,.footer a,.footer address{color:rgba(255,255,255,.88);font-style:normal;font-size:.94rem}.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;color:#fff}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid rgba(255,255,255,.22);margin-top:38px;padding-top:20px;font-size:.85rem;color:rgba(255,255,255,.82)}.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}
 @media(max-width:1020px){.nav{gap:14px}.nav a{font-size:.85rem}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.volunteer-inner,.milestones-grid{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}}
-@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:12px}.ods-list img{width:88px;height:88px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.card{min-height:380px}.milestone-card{padding:22px}.milestone-logo-box{height:100px}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.newsletter-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
+@media(max-width:900px){.nav{gap:12px}.footer-grid{grid-template-columns:1fr 1fr}.about-grid,.volunteer-inner,.milestones-grid{grid-template-columns:1fr}.volunteer-content{max-width:100%}.split-panel,.split-panel.dark{padding:55px 30px}.friends-card{flex-direction:column;align-items:flex-start;padding:36px 32px}}
+@media(max-width:780px){.container{width:min(100% - 32px,1160px)}.header-inner{height:72px}.logo{width:125px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 24px 24px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch;gap:6px}.nav.open{display:flex}.nav a{padding:8px 0;font-size:1rem}.header .btn{padding:10px 14px;font-size:.85rem}.hero{min-height:590px}.hero-content{padding:75px 0}.section{padding:65px 0}.results-band{padding:54px 0}.ods-list{gap:12px}.ods-list img{width:88px;height:88px}.grid-3,.community-grid,.logos{grid-template-columns:1fr}.card{min-height:380px}.milestone-card{padding:22px}.milestone-logo-box{height:100px}.results-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-card{padding:20px 16px}.result-value{font-size:2.15rem}.result-label{font-size:1.15rem}.result-desc{font-size:.88rem}.split{grid-template-columns:1fr}.split-panel,.split-panel.dark{padding:48px 24px}.volunteer-inner{gap:24px}.volunteer-image img{height:250px}.community-media{height:210px}.community-body{padding:24px}.community-body .btn{width:100%}.friends-card{padding:28px 22px;gap:24px}.friends-action{width:100%}.friends-action .btn{width:100%;padding:15px 20px}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column}.actions .btn,.volunteer-content .btn,.results-cta .btn{width:100%}}
 @media(max-width:400px){.results-grid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
@@ -516,15 +529,28 @@
     </div>
   </section>
 
-  <section class="section newsletter" aria-labelledby="newsletter-titulo">
-    <div class="container newsletter-inner">
-      <div>
-        <div class="kicker">Novidades do COMQ</div>
-        <h2 id="newsletter-titulo">Fique por dentro das oportunidades.</h2>
-        <p>Receba informações sobre projetos, eventos, oportunidades, ações comunitárias e novidades do COMQ.</p>
-        <p class="newsletter-note">A inscrição por e-mail será ativada após a configuração de uma plataforma de envio e armazenamento de contatos. Não informe seus dados até essa integração estar disponível.</p>
+  <section class="section friends-band" id="amigos-comq" aria-labelledby="amigos-comq-titulo">
+    <div class="container">
+      <div class="friends-card">
+        <div class="friends-copy">
+          <div class="friends-pill">Amigos do COMQ</div>
+          <div class="kicker">Faça parte dessa rede</div>
+          <h2 id="amigos-comq-titulo">Seja um Amigo do COMQ.</h2>
+          <p class="friends-lead">Contribua mensalmente com o desenvolvimento de iniciativas que ampliam oportunidades e fortalecem a comunidade do Mário Quintana.</p>
+          <p>Cadastre seu interesse em apoiar o COMQ com uma contribuição mensal. Nossa equipe entrará em contato para apresentar as formas de contribuição e orientar os próximos passos.</p>
+        </div>
+        <div class="friends-action">
+          <a
+            class="btn"
+            href="https://forms.gle/pcmVA6DPhg18cqyWA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Quero ser um Amigo do COMQ (abre formulário em nova aba)"
+          >
+            Quero ser um Amigo do COMQ <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
-      <a class="btn btn-primary" href="mailto:comq.projeto@gmail.com?subject=Quero%20receber%20novidades%20do%20COMQ">Tenho interesse <span aria-hidden="true">→</span></a>
     </div>
   </section>
 </main>
